@@ -1,0 +1,1091 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-20T09:34:06+08:00",
+  "report": {
+    "schemaVersion": 1,
+    "date": "2026-08-20",
+    "updatedAt": "2026-08-20T09:34:06+08:00",
+    "contentStatus": "已查證",
+    "editions": {
+      "morning": {
+        "label": "晨報",
+        "time": "07:00",
+        "publishedAt": "2026-08-20T09:34:43+08:00",
+        "kicker": "Morning intelligence",
+        "readTime": "閱讀時間 6 分鐘",
+        "headline": [
+          "油市供應中斷延續，",
+          "利率回落與 VIX 降溫",
+          "暫緩全球風險壓力"
+        ],
+        "summary": "事實：美國 10 年期殖利率在 8 月 19 日降至 4.65%，VIX 降至 14.89；同日 S&P 500 小幅上漲，但日經 225 下跌 3.16%。推論：利率與波動指標短暫緩和，尚不足以消除能源供給中斷對通膨與運輸成本的風險。",
+        "risk": 63,
+        "riskCopy": "中性偏謹慎 · 能源供給與跨市場資料落差",
+        "leadTags": [
+          "能源",
+          "利率"
+        ],
+        "leadTitle": "市場波動降溫，但油市的實體供給缺口仍是主要變數",
+        "leadCopy": "事實：IEA 8 月報告指出，7 月全球石油供給增加至每日 1.015 億桶，但仍比一年前低 630 萬桶；同時可觀測庫存在 7 月減少 6,900 萬桶。美國財政部資料顯示，10 年期公債殖利率於 8 月 19 日為 4.65%。",
+        "why": "推論：若成品油與航運瓶頸延續，較低的長債殖利率未必能完全抵銷能源成本對通膨預期與企業利潤的壓力；這是待後續油價、庫存與官方數據驗證的情境。",
+        "links": [
+          {
+            "label": "IEA｜2026 年 8 月石油市場報告",
+            "url": "https://www.iea.org/reports/oil-market-report-august-2026"
+          },
+          {
+            "label": "美國財政部｜每日國債殖利率",
+            "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv"
+          }
+        ],
+        "impacts": [
+          {
+            "symbol": "布蘭特",
+            "label": "偏強",
+            "tone": "positive"
+          },
+          {
+            "symbol": "美國 10Y",
+            "label": "回落",
+            "tone": "positive"
+          },
+          {
+            "symbol": "運輸",
+            "label": "留意成本",
+            "tone": "negative"
+          }
+        ],
+        "importantNews": [
+          {
+            "number": "02",
+            "category": "央行",
+            "region": "美國",
+            "title": "聯準會已於 8 月 19 日發布 7 月 28–29 日會議紀要",
+            "summary": "事實：聯準會官方 8 月行事曆列示，該次 FOMC 會議紀要在 8 月 19 日美東時間 14:00 發布。推論：市場會以紀要檢視委員對通膨、成長與利率路徑的分歧，不能僅以單一行情日推定政策方向。",
+            "impact": "美債、美元、成長股",
+            "links": [
+              {
+                "label": "聯準會｜2026 年 8 月行事曆",
+                "url": "https://www.federalreserve.gov/newsevents/2026-august.htm"
+              },
+              {
+                "label": "聯準會｜貨幣政策文件",
+                "url": "https://www.federalreserve.gov/monetarypolicy.htm"
+              }
+            ]
+          },
+          {
+            "number": "03",
+            "category": "能源",
+            "region": "全球",
+            "title": "IEA 下修 2026 年油品需求，仍示警供給與庫存同步偏緊",
+            "summary": "事實：IEA 估計 2026 年全球石油需求將減少每日 160 萬桶，並預估第 3 季油市缺口為每日 180 萬桶；7 月可觀測庫存減少 6,900 萬桶。推論：需求預測轉弱不代表價格壓力必然消失，因供給與運輸中斷仍是獨立風險。",
+            "impact": "原油、煉油、航運、通膨",
+            "links": [
+              {
+                "label": "IEA｜2026 年 8 月石油市場報告",
+                "url": "https://www.iea.org/reports/oil-market-report-august-2026"
+              }
+            ]
+          },
+          {
+            "number": "04",
+            "category": "市場",
+            "region": "美國",
+            "title": "美國 10 年期殖利率回落至 4.65%，VIX 降至 14.89",
+            "summary": "事實：美國財政部的 8 月 19 日曲線顯示 10 年期殖利率較前一交易日低 6 個基點；Cboe 的 VIX 收盤值為 14.89、較前日低約 6.00%。推論：這代表當日波動定價降溫，並非能源或政策不確定性已消失。",
+            "impact": "美債、美元、全球風險資產",
+            "links": [
+              {
+                "label": "美國財政部｜每日國債殖利率",
+                "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv"
+              },
+              {
+                "label": "Cboe｜VIX 歷史價格",
+                "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv"
+              }
+            ]
+          },
+          {
+            "number": "05",
+            "category": "數據",
+            "region": "歐元區",
+            "title": "歐元區 7 月通膨初估為 2.9%，能源年增 10.0%",
+            "summary": "事實：Eurostat 的 7 月資料顯示，歐元區年通膨由 6 月的 2.8% 升至 2.9%，能源為主要類別中年增最快者。推論：若能源漲勢延續，歐洲央行面對的通膨組成可能更複雜。",
+            "impact": "歐元、歐債、歐洲消費",
+            "links": [
+              {
+                "label": "Eurostat｜歐元區通膨",
+                "url": "https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/18881.pdf?v=7606858652753503"
+              }
+            ]
+          },
+          {
+            "number": "06",
+            "category": "前瞻",
+            "region": "美國",
+            "title": "美國 GDP 第二次估計與 7 月個人所得及支出將於 8 月 26 日同時發布",
+            "summary": "事實：BEA 發布日程列示兩項資料均在 8 月 26 日 08:30（美東時間）公布。推論：成長修正與 PCE 相關訊號同時出爐，可能使美債、美元及股市對單一發布時點更敏感。",
+            "impact": "全球股債匯",
+            "links": [
+              {
+                "label": "BEA｜官方發布日程",
+                "url": "https://www.bea.gov/news/schedule/full"
+              }
+            ]
+          }
+        ],
+        "underRadar": [
+          {
+            "tag": "油品結構",
+            "score": "8.9",
+            "title": "原油供給回升，煉油量卻仍比一年前低近 500 萬桶／日",
+            "why": "事實：IEA 指出 7 月煉油原油處理量為每日 8,090 萬桶，仍明顯低於一年前。推論：原油價格走勢與柴油、航煤等終端成本可能短期脫鉤。",
+            "links": [
+              {
+                "label": "IEA｜2026 年 8 月石油市場報告",
+                "url": "https://www.iea.org/reports/oil-market-report-august-2026"
+              }
+            ]
+          },
+          {
+            "tag": "庫存緩衝",
+            "score": "8.4",
+            "title": "油品在途庫存下滑，是 7 月全球庫存減少的主因",
+            "why": "事實：IEA 表示 7 月可觀測庫存減少 6,900 萬桶，其中在途庫存降幅顯著。推論：航道與運輸中斷會直接影響可用緩衝，而不只影響報價。",
+            "links": [
+              {
+                "label": "IEA｜2026 年 8 月石油市場報告",
+                "url": "https://www.iea.org/reports/oil-market-report-august-2026"
+              }
+            ]
+          },
+          {
+            "tag": "統計口徑",
+            "score": "7.8",
+            "title": "2026 年起歐元區 HICP 組成納入 21 個國家",
+            "why": "事實：Eurostat 說明 2026 年 1 月起資料涵蓋 21 國，較先前口徑多一國。推論：比較跨年通膨序列時，需注意組成變動與經濟變化不是同一件事。",
+            "links": [
+              {
+                "label": "Eurostat｜歐元區通膨資料說明",
+                "url": "https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/18881.pdf?v=7606858652753503"
+              }
+            ]
+          }
+        ]
+      },
+      "evening": {
+        "label": "晚報",
+        "time": "18:30",
+        "publishedAt": null,
+        "kicker": "Evening intelligence",
+        "readTime": "閱讀時間 7 分鐘",
+        "headline": [
+          "科技股與日股回檔，",
+          "今晚焦點轉向",
+          "聯準會會議紀要"
+        ],
+        "summary": "事實：臺股與日經 225 在 8 月 19 日分別下跌 1.30% 與 3.16%；S&P 500 與 NASDAQ 的最近完成交易日也分別下跌 0.69% 與 1.33%。推論：在美國 10 年期殖利率為 4.71% 時，今晚的聯準會紀要可能放大科技股與長債的連動。",
+        "risk": 70,
+        "riskCopy": "偏謹慎 · 等待聯準會紀要與歐洲時段定價",
+        "leadTags": [
+          "亞洲收盤",
+          "利率"
+        ],
+        "leadTitle": "亞洲已先反映科技股降溫；歐洲開盤後，市場在等利率訊號",
+        "leadCopy": "事實：FRED 顯示日經 225 在 8 月 19 日收 65,326.42 點、下跌 3.16%；S&P 500 與 NASDAQ 的 8 月 18 日終值分別下跌 0.69% 與 1.33%。美國財政部的 8 月 18 日資料顯示，10 年期殖利率為 4.71%。",
+        "why": "推論：若紀要顯示對通膨或期限溢酬的憂慮擴大，較長存續期間的成長股與長債可能同受壓；這不是已發生的結論，而是今晚須驗證的情境。",
+        "links": [
+          {
+            "label": "臺灣證交所｜8 月 19 日每日收盤行情",
+            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260819&type=ALLBUT0999&response=json"
+          },
+          {
+            "label": "FRED｜日經 225",
+            "url": "https://fred.stlouisfed.org/series/NIKKEI225"
+          },
+          {
+            "label": "美國財政部｜每日國債殖利率",
+            "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+          },
+          {
+            "label": "FRED｜NASDAQ 綜合指數",
+            "url": "https://fred.stlouisfed.org/series/NASDAQCOM"
+          }
+        ],
+        "impacts": [
+          {
+            "symbol": "臺股",
+            "label": "承壓",
+            "tone": "negative"
+          },
+          {
+            "symbol": "日經",
+            "label": "回檔",
+            "tone": "negative"
+          },
+          {
+            "symbol": "美國 10Y",
+            "label": "4.71%",
+            "tone": "negative"
+          }
+        ],
+        "importantNews": [
+          {
+            "number": "02",
+            "category": "收盤",
+            "region": "臺灣",
+            "title": "臺灣加權指數 8 月 19 日收 44,719.35 點，跌 1.30%",
+            "summary": "事實：臺灣證交所指定日期的每日收盤行情顯示，加權指數較前一交易日下跌 589.33 點。推論：日、美科技股同步走弱時，臺股短期波動風險仍須留意。",
+            "impact": "臺股、臺幣、半導體",
+            "links": [
+              {
+                "label": "臺灣證交所｜8 月 19 日每日收盤行情",
+                "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260819&type=ALLBUT0999&response=json"
+              }
+            ]
+          },
+          {
+            "number": "03",
+            "category": "央行",
+            "region": "美國",
+            "title": "聯準會將於臺北時間明晨公布 7 月 28–29 日會議紀要",
+            "summary": "事實：聯準會官方日程列示 8 月 19 日發布該次紀要；截至本報更新時尚未公布。推論：市場將據此重新評估利率、美元與成長股的短期定價。",
+            "impact": "美債、美元、黃金",
+            "links": [
+              {
+                "label": "聯準會｜貨幣政策文件與日程",
+                "url": "https://www.federalreserve.gov/monetarypolicy.htm"
+              }
+            ]
+          },
+          {
+            "number": "04",
+            "category": "債券",
+            "region": "全球",
+            "title": "美國 10 年期殖利率最新為 4.71%，較前一交易日低 1 個基點",
+            "summary": "事實：美國財政部顯示 8 月 18 日的 10 年期國債殖利率為 4.71%，低於 8 月 17 日的 4.72%。推論：殖利率仍在高檔，通常會提高遠期獲利的折現壓力，但不代表單一產業必然下跌。",
+            "impact": "長債、銀行、成長股",
+            "links": [
+              {
+                "label": "美國財政部｜每日國債殖利率",
+                "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+              }
+            ]
+          },
+          {
+            "number": "05",
+            "category": "能源",
+            "region": "全球",
+            "title": "IEA：原油供應雖反彈，距衝突前水準仍有明顯落差",
+            "summary": "事實：IEA 7 月報告指出，6 月全球供給反彈 410 萬桶／日至 9,880 萬桶／日，但仍較戰前低 940 萬桶／日。推論：供應修復速度與航道正常化，仍是能源與運輸成本的關鍵變數。",
+            "impact": "能源、航運、通膨",
+            "links": [
+              {
+                "label": "IEA｜2026 年 7 月石油市場報告",
+                "url": "https://www.iea.org/reports/oil-market-report-july-2026"
+              },
+              {
+                "label": "FRED｜布蘭特原油價格",
+                "url": "https://fred.stlouisfed.org/series/DCOILBRENTEU"
+              }
+            ]
+          },
+          {
+            "number": "06",
+            "category": "前瞻",
+            "region": "歐美",
+            "title": "美國 GDP 第二次估計與 7 月個人所得及支出均排定 8 月 26 日發布",
+            "summary": "事實：BEA 官方日程顯示兩項資料將同在 8 月 26 日 08:30（美東時間）公布；第 2 季 GDP 初估年化成長率為 1.5%。推論：修正後的成長與 PCE 通膨若同向意外，可能同時影響債券、美元與股市。",
+            "impact": "全球股債匯",
+            "links": [
+              {
+                "label": "BEA｜發布日程",
+                "url": "https://www.bea.gov/news/schedule"
+              },
+              {
+                "label": "BEA｜第 2 季 GDP 初估",
+                "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026"
+              }
+            ]
+          }
+        ],
+        "underRadar": [
+          {
+            "tag": "歐洲通膨",
+            "score": "8.8",
+            "title": "歐元區 7 月通膨初估升至 2.9%，能源年增 10.0%",
+            "why": "事實：Eurostat 的 7 月資料顯示能源為年增最快的主要項目。推論：若能源成本持續偏高，歐洲家庭實質所得與企業成本的壓力可能增加。",
+            "links": [
+              {
+                "label": "Eurostat｜歐元區通膨說明",
+                "url": "https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/18881.pdf?v=5953643315925432"
+              }
+            ]
+          },
+          {
+            "tag": "政策時程",
+            "score": "8.2",
+            "title": "澳洲央行 8 月會議紀要將於 8 月 25 日發布",
+            "why": "事實：RBA 行程表列示 8 月貨幣政策會議紀要發布日。推論：在能源與匯率均有波動時，紀要可用來判讀其對通膨與限制性政策的權衡。",
+            "links": [
+              {
+                "label": "RBA｜2026 年 8 月行程表",
+                "url": "https://www.rba.gov.au/schedules-events/calendar/?topics=monetary-policy-board"
+              }
+            ]
+          },
+          {
+            "tag": "資料可得性",
+            "score": "7.9",
+            "title": "IEA 8 月石油市場報告已排定於 8 月 12 日發布，完整內容有訂閱限制",
+            "why": "事實：IEA 說明該報告涵蓋供給、需求、煉油與庫存；本報僅採用其公開可讀的 7 月摘要。推論：避免以付費全文未揭露的數字補足市場敘事，可降低資料誤用風險。",
+            "links": [
+              {
+                "label": "IEA｜2026 年 8 月石油市場報告活動頁",
+                "url": "https://www.iea.org/events/oil-market-report-august-2026?language=de"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "dailyKnowledge": {
+      "number": "NO. 002",
+      "date": "2026.08.20",
+      "category": "公共衛生",
+      "readTime": "60 秒讀懂",
+      "title": "為什麼 8 月 20 日被稱為世界蚊子日？",
+      "summary": "世界蚊子日用來提高對蚊媒疾病的認識。蚊子可傳播瘧疾、登革熱、黃熱病與茲卡病毒等疾病；防治重點包括減少孳生源、個人防護與公共衛生監測。",
+      "takeaway": "氣候、都市化與旅行都會改變蚊媒疾病的暴露風險；日常清除積水是最可直接採取的防護行動之一。",
+      "links": [
+        {
+          "label": "世界衛生組織｜蚊媒疾病與黃熱病防治資料",
+          "url": "https://cdn.who.int/media/docs/default-source/documents/emergencies/health-topics---yellow-fever/eye-strategy-communication-strategy-2024-update.pdf?download=true&sfvrsn=d1d819be_1"
+        }
+      ]
+    },
+    "events": [
+      {
+        "time": "08.26 20:30",
+        "region": "美國",
+        "event": "第 2 季 GDP 第二次估計、企業獲利與 7 月個人所得及支出（臺北時間）",
+        "level": "高"
+      },
+      {
+        "time": "08.27",
+        "region": "歐元區",
+        "event": "Eurostat 公布 8 月經濟信心指標（依官方行程）",
+        "level": "中"
+      },
+      {
+        "time": "09.15–16",
+        "region": "美國",
+        "event": "聯準會利率會議",
+        "level": "高"
+      },
+      {
+        "time": "09.17",
+        "region": "歐元區",
+        "event": "Eurostat 公布 8 月 HICP 最終值（依官方行程）",
+        "level": "中"
+      }
+    ]
+  },
+  "marketSnapshot": {
+    "generatedAt": "2026-08-20T09:34:06+08:00",
+    "edition": "晨報公開資料快照",
+    "items": [
+      {
+        "key": "taiex",
+        "label": "臺灣加權",
+        "value": "44,719.35",
+        "change": "−1.30%",
+        "tone": "down",
+        "asOf": "2026-08-19",
+        "source": "臺灣證交所",
+        "sourceUrl": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260819&type=ALLBUT0999&response=json"
+      },
+      {
+        "key": "nikkei",
+        "label": "日經 225",
+        "value": "65,326.42",
+        "change": "−3.16%",
+        "tone": "down",
+        "asOf": "2026-08-19",
+        "source": "FRED",
+        "sourceUrl": "https://fred.stlouisfed.org/series/NIKKEI225"
+      },
+      {
+        "key": "eurostoxx50",
+        "label": "EURO STOXX 50",
+        "value": "6,472.87",
+        "change": "+0.07%",
+        "tone": "up",
+        "asOf": "2026-08-19",
+        "source": "TradingView",
+        "sourceUrl": "https://www.tradingview.com/symbols/TVC-SX5E/"
+      },
+      {
+        "key": "dax",
+        "label": "DAX",
+        "value": "26,079.95",
+        "change": "−0.19%",
+        "tone": "down",
+        "asOf": "2026-08-19",
+        "source": "TradingView",
+        "sourceUrl": "https://www.tradingview.com/symbols/XETR-DAX/"
+      },
+      {
+        "key": "ftse100",
+        "label": "FTSE 100",
+        "value": "10,721.34",
+        "change": "−0.06%",
+        "tone": "down",
+        "asOf": "2026-08-19",
+        "source": "TradingView",
+        "sourceUrl": "https://www.tradingview.com/symbols/TVC-UKX/"
+      },
+      {
+        "key": "sp500",
+        "label": "S&P 500",
+        "value": "7,707.98",
+        "change": "+0.21%",
+        "tone": "up",
+        "asOf": "2026-08-19",
+        "source": "FRED",
+        "sourceUrl": "https://fred.stlouisfed.org/series/SP500"
+      },
+      {
+        "key": "nasdaq",
+        "label": "NASDAQ",
+        "value": "26,289.71",
+        "change": "−1.33%",
+        "tone": "down",
+        "asOf": "2026-08-18",
+        "source": "FRED",
+        "sourceUrl": "https://fred.stlouisfed.org/series/NASDAQCOM"
+      },
+      {
+        "key": "us10y",
+        "label": "美國 10Y",
+        "value": "4.65%",
+        "change": "−6.0 bp",
+        "tone": "up",
+        "asOf": "2026-08-19",
+        "source": "美國財政部",
+        "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv"
+      },
+      {
+        "key": "dollar",
+        "label": "美元廣義指數",
+        "value": "118.90",
+        "change": "−0.24%",
+        "tone": "down",
+        "asOf": "2026-08-14",
+        "source": "FRED",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS"
+      },
+      {
+        "key": "usdtwd",
+        "label": "美元／臺幣",
+        "value": "31.937",
+        "change": "−0.03%",
+        "tone": "down",
+        "asOf": "2026-08-19",
+        "source": "中央銀行",
+        "sourceUrl": "https://data.gov.tw/dataset/7232"
+      },
+      {
+        "key": "vix",
+        "label": "VIX 恐慌指數",
+        "value": "14.89",
+        "change": "−6.00%",
+        "tone": "up",
+        "asOf": "2026-08-19",
+        "source": "Cboe",
+        "sourceUrl": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv"
+      },
+      {
+        "key": "brent",
+        "label": "布蘭特原油",
+        "value": "$95.29",
+        "change": "+3.09%",
+        "tone": "up",
+        "asOf": "2026-08-18",
+        "source": "FRED／EIA",
+        "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU"
+      },
+      {
+        "key": "gold",
+        "label": "黃金現貨",
+        "value": "$4,371.95",
+        "change": "+0.86%",
+        "tone": "up",
+        "asOf": "2026-08-19",
+        "source": "TradingView",
+        "sourceUrl": "https://www.tradingview.com/symbols/TVC-GOLD/"
+      },
+      {
+        "key": "bitcoin",
+        "label": "比特幣",
+        "value": "$69,278",
+        "change": "+7.11%",
+        "tone": "up",
+        "asOf": "2026-08-20T09:34:06+08:00",
+        "source": "Coinbase",
+        "sourceUrl": "https://www.coinbase.com/price/bitcoin"
+      }
+    ]
+  },
+  "reportHistory": {
+    "schemaVersion": 1,
+    "entries": [
+      {
+        "date": "2026-08-19",
+        "archivedAt": "2026-08-20T07:22:50+08:00",
+        "report": {
+          "schemaVersion": 1,
+          "date": "2026-08-19",
+          "updatedAt": "2026-08-19T20:10:55+08:00",
+          "contentStatus": "已查證",
+          "editions": {
+            "morning": {
+              "label": "晨報",
+              "time": "07:00",
+              "publishedAt": "2026-08-19T15:47:14+08:00",
+              "kicker": "Morning intelligence",
+              "readTime": "閱讀時間 6 分鐘",
+              "headline": [
+                "長債利率攀高，",
+                "科技股降溫",
+                "讓亞洲市場承受賣壓"
+              ],
+              "summary": "美國十年期公債殖利率維持高檔，日經、S&P 500 與 NASDAQ 最新收盤同步回落；臺股在 8 月 18 日下跌 1.20%，市場重新評估長期資金成本與科技股估值。",
+              "risk": 68,
+              "riskCopy": "中性偏空 · 利率與科技股波動升高",
+              "leadTags": [
+                "利率",
+                "全球"
+              ],
+              "leadTitle": "資金正在重新定價「更久、更貴」的長期資金成本",
+              "leadCopy": "長天期殖利率上升，會同步提高政府、企業與房貸的融資成本。即使政策利率未再上調，長端利率仍可能壓縮高估值科技股，並把資金推向現金流較穩定的產業。",
+              "why": "這不只影響債券；它會透過估值折現率、美元與資金流，傳導到全球股票及新興市場。",
+              "links": [
+                {
+                  "label": "FRED｜美國十年期公債殖利率",
+                  "url": "https://fred.stlouisfed.org/series/DGS10"
+                },
+                {
+                  "label": "Axios｜全球長期利率重新定價",
+                  "url": "https://www.axios.com/2026/08/18/global-rates-japan-britain"
+                }
+              ],
+              "impacts": [
+                {
+                  "symbol": "NASDAQ",
+                  "label": "承壓",
+                  "tone": "negative"
+                },
+                {
+                  "symbol": "USD",
+                  "label": "偏強",
+                  "tone": "positive"
+                },
+                {
+                  "symbol": "長債",
+                  "label": "波動",
+                  "tone": "negative"
+                }
+              ],
+              "importantNews": [
+                {
+                  "number": "02",
+                  "category": "央行",
+                  "region": "美國",
+                  "title": "聯準會維持利率於 3.50%–3.75%，三位委員主張升息一碼",
+                  "summary": "7 月決議反映通膨與能源供給衝擊仍受關注；7 月會議紀要排定於 8 月 19 日公布。",
+                  "impact": "美債、美元、成長股",
+                  "links": [
+                    {
+                      "label": "聯準會｜7 月 29 日政策聲明",
+                      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+                    },
+                    {
+                      "label": "聯準會｜會議與紀要日程",
+                      "url": "https://www.federalreserve.gov/monetarypolicy.htm"
+                    }
+                  ]
+                },
+                {
+                  "number": "03",
+                  "category": "股市",
+                  "region": "亞洲",
+                  "title": "臺股與日股最新交易日同步回檔，半導體與高估值族群成為觀察重點",
+                  "summary": "臺灣加權指數 8 月 18 日下跌 1.20%，日經 225 同日下跌 2.54%，風險偏好明顯降溫。",
+                  "impact": "臺股、日股、半導體",
+                  "links": [
+                    {
+                      "label": "臺灣證交所｜官方 OpenAPI",
+                      "url": "https://openapi.twse.com.tw/"
+                    },
+                    {
+                      "label": "FRED｜日經 225",
+                      "url": "https://fred.stlouisfed.org/series/NIKKEI225"
+                    }
+                  ]
+                },
+                {
+                  "number": "04",
+                  "category": "能源",
+                  "region": "全球",
+                  "title": "原油供給部分恢復，但成品油市場仍比原油現貨更緊",
+                  "summary": "IEA 指出 6 月全球供給明顯反彈，成品油裂解價差與煉油利潤卻升至四年高點，顯示供需恢復不均。",
+                  "impact": "原油、煉油、航空",
+                  "links": [
+                    {
+                      "label": "IEA｜2026 年 7 月石油市場報告",
+                      "url": "https://www.iea.org/reports/oil-market-report-july-2026"
+                    }
+                  ]
+                },
+                {
+                  "number": "05",
+                  "category": "央行",
+                  "region": "歐洲",
+                  "title": "歐洲央行下一份貨幣政策會議紀要將於 8 月 27 日發布",
+                  "summary": "紀要將補充管理委員會對通膨、成長與政策選項的討論，可能影響歐元與歐債定價。",
+                  "impact": "歐元、歐債、歐洲銀行",
+                  "links": [
+                    {
+                      "label": "歐洲央行｜貨幣政策會議紀要",
+                      "url": "https://www.ecb.europa.eu/press/accounts/html/index.en.html"
+                    }
+                  ]
+                },
+                {
+                  "number": "06",
+                  "category": "數據",
+                  "region": "美國",
+                  "title": "美國第二季 GDP 修正值與 7 月個人所得支出將在同日公布",
+                  "summary": "兩份報告都排定於 8 月 26 日發布，成長與通膨訊號同時出爐，可能放大債券與美元波動。",
+                  "impact": "美債、美元、美股",
+                  "links": [
+                    {
+                      "label": "美國經濟分析局｜發布日程",
+                      "url": "https://www.bea.gov/news/schedule"
+                    }
+                  ]
+                }
+              ],
+              "underRadar": [
+                {
+                  "tag": "氣候與糧食",
+                  "score": "8.8",
+                  "title": "增強中的聖嬰現象，可能讓近五千萬名脆弱人口陷入急性飢餓",
+                  "why": "這會先反映在人道支援需求、農產供給與財政壓力，之後才可能傳導到主流市場價格。",
+                  "links": [
+                    {
+                      "label": "聯合國｜聖嬰與急性飢餓風險",
+                      "url": "https://www.un.org/en/strengthening-el-ni%C3%B1o-push-49-million-more-people-acute-hunger"
+                    }
+                  ]
+                },
+                {
+                  "tag": "能源結構",
+                  "score": "8.1",
+                  "title": "原油供給恢復，不代表柴油與汽油的緊張同步解除",
+                  "why": "煉油廠復工與成品油運輸較慢，終端燃料成本可能與原油價格短暫脫鉤。",
+                  "links": [
+                    {
+                      "label": "IEA｜供給、庫存與煉油摘要",
+                      "url": "https://www.iea.org/reports/oil-market-report-july-2026"
+                    }
+                  ]
+                },
+                {
+                  "tag": "事件風險",
+                  "score": "7.7",
+                  "title": "GDP 與 PCE 同時發布，單一時點將承載兩種相反的交易訊號",
+                  "why": "成長強但通膨高，或成長弱但通膨降，都可能引發不同方向的利率重新定價。",
+                  "links": [
+                    {
+                      "label": "BEA｜2026 年官方發布日程",
+                      "url": "https://www.bea.gov/news/schedule"
+                    }
+                  ]
+                }
+              ]
+            },
+            "evening": {
+              "label": "晚報",
+              "time": "18:30",
+              "publishedAt": "2026-08-19T19:54:10+08:00",
+              "kicker": "Evening intelligence",
+              "readTime": "閱讀時間 7 分鐘",
+              "headline": [
+                "科技股與日股回檔，",
+                "今晚焦點轉向",
+                "聯準會會議紀要"
+              ],
+              "summary": "事實：臺股與日經 225 在 8 月 19 日分別下跌 1.30% 與 3.16%；S&P 500 與 NASDAQ 的最近完成交易日也分別下跌 0.69% 與 1.33%。推論：在美國 10 年期殖利率為 4.71% 時，今晚的聯準會紀要可能放大科技股與長債的連動。",
+              "risk": 70,
+              "riskCopy": "偏謹慎 · 等待聯準會紀要與歐洲時段定價",
+              "leadTags": [
+                "亞洲收盤",
+                "利率"
+              ],
+              "leadTitle": "亞洲已先反映科技股降溫；歐洲開盤後，市場在等利率訊號",
+              "leadCopy": "事實：FRED 顯示日經 225 在 8 月 19 日收 65,326.42 點、下跌 3.16%；S&P 500 與 NASDAQ 的 8 月 18 日終值分別下跌 0.69% 與 1.33%。美國財政部的 8 月 18 日資料顯示，10 年期殖利率為 4.71%。",
+              "why": "推論：若紀要顯示對通膨或期限溢酬的憂慮擴大，較長存續期間的成長股與長債可能同受壓；這不是已發生的結論，而是今晚須驗證的情境。",
+              "links": [
+                {
+                  "label": "臺灣證交所｜8 月 19 日每日收盤行情",
+                  "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260819&type=ALLBUT0999&response=json"
+                },
+                {
+                  "label": "FRED｜日經 225",
+                  "url": "https://fred.stlouisfed.org/series/NIKKEI225"
+                },
+                {
+                  "label": "美國財政部｜每日國債殖利率",
+                  "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+                },
+                {
+                  "label": "FRED｜NASDAQ 綜合指數",
+                  "url": "https://fred.stlouisfed.org/series/NASDAQCOM"
+                }
+              ],
+              "impacts": [
+                {
+                  "symbol": "臺股",
+                  "label": "承壓",
+                  "tone": "negative"
+                },
+                {
+                  "symbol": "日經",
+                  "label": "回檔",
+                  "tone": "negative"
+                },
+                {
+                  "symbol": "美國 10Y",
+                  "label": "4.71%",
+                  "tone": "negative"
+                }
+              ],
+              "importantNews": [
+                {
+                  "number": "02",
+                  "category": "收盤",
+                  "region": "臺灣",
+                  "title": "臺灣加權指數 8 月 19 日收 44,719.35 點，跌 1.30%",
+                  "summary": "事實：臺灣證交所指定日期的每日收盤行情顯示，加權指數較前一交易日下跌 589.33 點。推論：日、美科技股同步走弱時，臺股短期波動風險仍須留意。",
+                  "impact": "臺股、臺幣、半導體",
+                  "links": [
+                    {
+                      "label": "臺灣證交所｜8 月 19 日每日收盤行情",
+                      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260819&type=ALLBUT0999&response=json"
+                    }
+                  ]
+                },
+                {
+                  "number": "03",
+                  "category": "央行",
+                  "region": "美國",
+                  "title": "聯準會將於臺北時間明晨公布 7 月 28–29 日會議紀要",
+                  "summary": "事實：聯準會官方日程列示 8 月 19 日發布該次紀要；截至本報更新時尚未公布。推論：市場將據此重新評估利率、美元與成長股的短期定價。",
+                  "impact": "美債、美元、黃金",
+                  "links": [
+                    {
+                      "label": "聯準會｜貨幣政策文件與日程",
+                      "url": "https://www.federalreserve.gov/monetarypolicy.htm"
+                    }
+                  ]
+                },
+                {
+                  "number": "04",
+                  "category": "債券",
+                  "region": "全球",
+                  "title": "美國 10 年期殖利率最新為 4.71%，較前一交易日低 1 個基點",
+                  "summary": "事實：美國財政部顯示 8 月 18 日的 10 年期國債殖利率為 4.71%，低於 8 月 17 日的 4.72%。推論：殖利率仍在高檔，通常會提高遠期獲利的折現壓力，但不代表單一產業必然下跌。",
+                  "impact": "長債、銀行、成長股",
+                  "links": [
+                    {
+                      "label": "美國財政部｜每日國債殖利率",
+                      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve"
+                    }
+                  ]
+                },
+                {
+                  "number": "05",
+                  "category": "能源",
+                  "region": "全球",
+                  "title": "IEA：原油供應雖反彈，距衝突前水準仍有明顯落差",
+                  "summary": "事實：IEA 7 月報告指出，6 月全球供給反彈 410 萬桶／日至 9,880 萬桶／日，但仍較戰前低 940 萬桶／日。推論：供應修復速度與航道正常化，仍是能源與運輸成本的關鍵變數。",
+                  "impact": "能源、航運、通膨",
+                  "links": [
+                    {
+                      "label": "IEA｜2026 年 7 月石油市場報告",
+                      "url": "https://www.iea.org/reports/oil-market-report-july-2026"
+                    },
+                    {
+                      "label": "FRED｜布蘭特原油價格",
+                      "url": "https://fred.stlouisfed.org/series/DCOILBRENTEU"
+                    }
+                  ]
+                },
+                {
+                  "number": "06",
+                  "category": "前瞻",
+                  "region": "歐美",
+                  "title": "美國 GDP 第二次估計與 7 月個人所得及支出均排定 8 月 26 日發布",
+                  "summary": "事實：BEA 官方日程顯示兩項資料將同在 8 月 26 日 08:30（美東時間）公布；第 2 季 GDP 初估年化成長率為 1.5%。推論：修正後的成長與 PCE 通膨若同向意外，可能同時影響債券、美元與股市。",
+                  "impact": "全球股債匯",
+                  "links": [
+                    {
+                      "label": "BEA｜發布日程",
+                      "url": "https://www.bea.gov/news/schedule"
+                    },
+                    {
+                      "label": "BEA｜第 2 季 GDP 初估",
+                      "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026"
+                    }
+                  ]
+                }
+              ],
+              "underRadar": [
+                {
+                  "tag": "歐洲通膨",
+                  "score": "8.8",
+                  "title": "歐元區 7 月通膨初估升至 2.9%，能源年增 10.0%",
+                  "why": "事實：Eurostat 的 7 月資料顯示能源為年增最快的主要項目。推論：若能源成本持續偏高，歐洲家庭實質所得與企業成本的壓力可能增加。",
+                  "links": [
+                    {
+                      "label": "Eurostat｜歐元區通膨說明",
+                      "url": "https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/18881.pdf?v=5953643315925432"
+                    }
+                  ]
+                },
+                {
+                  "tag": "政策時程",
+                  "score": "8.2",
+                  "title": "澳洲央行 8 月會議紀要將於 8 月 25 日發布",
+                  "why": "事實：RBA 行程表列示 8 月貨幣政策會議紀要發布日。推論：在能源與匯率均有波動時，紀要可用來判讀其對通膨與限制性政策的權衡。",
+                  "links": [
+                    {
+                      "label": "RBA｜2026 年 8 月行程表",
+                      "url": "https://www.rba.gov.au/schedules-events/calendar/?topics=monetary-policy-board"
+                    }
+                  ]
+                },
+                {
+                  "tag": "資料可得性",
+                  "score": "7.9",
+                  "title": "IEA 8 月石油市場報告已排定於 8 月 12 日發布，完整內容有訂閱限制",
+                  "why": "事實：IEA 說明該報告涵蓋供給、需求、煉油與庫存；本報僅採用其公開可讀的 7 月摘要。推論：避免以付費全文未揭露的數字補足市場敘事，可降低資料誤用風險。",
+                  "links": [
+                    {
+                      "label": "IEA｜2026 年 8 月石油市場報告活動頁",
+                      "url": "https://www.iea.org/events/oil-market-report-august-2026?language=de"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "dailyKnowledge": {
+            "number": "NO. 001",
+            "date": "2026.08.19",
+            "category": "國際紀念日",
+            "readTime": "60 秒讀懂",
+            "title": "為什麼 8 月 19 日是世界人道日？",
+            "summary": "2003 年 8 月 19 日，伊拉克巴格達運河飯店遭到炸彈攻擊，22 名人道工作者喪生。五年後，聯合國大會將 8 月 19 日訂為世界人道日，用來紀念人道工作者，並關注他們與受危機影響民眾的安全。",
+            "takeaway": "這一天不只是紀念，也是提醒各方保護人道工作者、平民與援助通道。",
+            "links": [
+              {
+                "label": "聯合國｜世界人道日背景",
+                "url": "https://www.un.org/en/observances/humanitarian-day"
+              },
+              {
+                "label": "聯合國｜巴格達遇難者紀念頁",
+                "url": "https://www.un.org/en/memorial/baghdad2003.shtml"
+              }
+            ]
+          },
+          "events": [
+            {
+              "time": "08.20 02:00",
+              "region": "美國",
+              "event": "聯準會 7 月 28–29 日會議紀要（臺北時間）",
+              "level": "高"
+            },
+            {
+              "time": "08.26 20:30",
+              "region": "美國",
+              "event": "第 2 季 GDP 第二次估計、企業獲利與 7 月個人所得及支出",
+              "level": "高"
+            },
+            {
+              "time": "08.25 09:30",
+              "region": "澳洲",
+              "event": "澳洲央行 8 月貨幣政策會議紀要（臺北時間）",
+              "level": "中"
+            },
+            {
+              "time": "09.15–16",
+              "region": "美國",
+              "event": "聯準會利率會議",
+              "level": "高"
+            }
+          ]
+        },
+        "marketSnapshot": {
+          "generatedAt": "2026-08-19T20:22:31+08:00",
+          "edition": "晚報公開資料快照",
+          "items": [
+            {
+              "key": "taiex",
+              "label": "臺灣加權",
+              "value": "44,719.35",
+              "change": "−1.30%",
+              "tone": "down",
+              "asOf": "2026-08-19",
+              "source": "臺灣證交所",
+              "sourceUrl": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260819&type=ALLBUT0999&response=json"
+            },
+            {
+              "key": "nikkei",
+              "label": "日經 225",
+              "value": "65,326.42",
+              "change": "−3.16%",
+              "tone": "down",
+              "asOf": "2026-08-19",
+              "source": "FRED",
+              "sourceUrl": "https://fred.stlouisfed.org/series/NIKKEI225"
+            },
+            {
+              "key": "eurostoxx50",
+              "label": "EURO STOXX 50",
+              "value": "6,472.87",
+              "change": "+0.07%",
+              "tone": "up",
+              "asOf": "2026-08-19",
+              "source": "TradingView",
+              "sourceUrl": "https://www.tradingview.com/symbols/TVC-SX5E/"
+            },
+            {
+              "key": "dax",
+              "label": "DAX",
+              "value": "26,079.95",
+              "change": "−0.19%",
+              "tone": "down",
+              "asOf": "2026-08-19",
+              "source": "TradingView",
+              "sourceUrl": "https://www.tradingview.com/symbols/XETR-DAX/"
+            },
+            {
+              "key": "ftse100",
+              "label": "FTSE 100",
+              "value": "10,721.34",
+              "change": "−0.06%",
+              "tone": "down",
+              "asOf": "2026-08-19",
+              "source": "TradingView",
+              "sourceUrl": "https://www.tradingview.com/symbols/TVC-UKX/"
+            },
+            {
+              "key": "sp500",
+              "label": "S&P 500",
+              "value": "7,691.76",
+              "change": "−0.69%",
+              "tone": "down",
+              "asOf": "2026-08-18",
+              "source": "FRED",
+              "sourceUrl": "https://fred.stlouisfed.org/series/SP500"
+            },
+            {
+              "key": "nasdaq",
+              "label": "NASDAQ",
+              "value": "26,289.71",
+              "change": "−1.33%",
+              "tone": "down",
+              "asOf": "2026-08-18",
+              "source": "FRED",
+              "sourceUrl": "https://fred.stlouisfed.org/series/NASDAQCOM"
+            },
+            {
+              "key": "us10y",
+              "label": "美國 10Y",
+              "value": "4.71%",
+              "change": "−1.0 bp",
+              "tone": "up",
+              "asOf": "2026-08-18",
+              "source": "美國財政部",
+              "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv"
+            },
+            {
+              "key": "dollar",
+              "label": "美元廣義指數",
+              "value": "118.90",
+              "change": "−0.24%",
+              "tone": "down",
+              "asOf": "2026-08-14",
+              "source": "FRED",
+              "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS"
+            },
+            {
+              "key": "usdtwd",
+              "label": "美元／臺幣",
+              "value": "31.937",
+              "change": "−0.03%",
+              "tone": "down",
+              "asOf": "2026-08-19",
+              "source": "中央銀行",
+              "sourceUrl": "https://data.gov.tw/dataset/7232"
+            },
+            {
+              "key": "vix",
+              "label": "VIX 恐慌指數",
+              "value": "15.84",
+              "change": "+4.28%",
+              "tone": "warn",
+              "asOf": "2026-08-18",
+              "source": "Cboe",
+              "sourceUrl": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv"
+            },
+            {
+              "key": "brent",
+              "label": "布蘭特原油",
+              "value": "$93.26",
+              "change": "+0.56%",
+              "tone": "up",
+              "asOf": "2026-08-11",
+              "source": "FRED／EIA",
+              "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU"
+            },
+            {
+              "key": "gold",
+              "label": "黃金現貨",
+              "value": "$4,371.95",
+              "change": "+0.86%",
+              "tone": "up",
+              "asOf": "2026-08-19",
+              "source": "TradingView",
+              "sourceUrl": "https://www.tradingview.com/symbols/TVC-GOLD/"
+            },
+            {
+              "key": "bitcoin",
+              "label": "比特幣",
+              "value": "$64,464",
+              "change": "−0.03%",
+              "tone": "down",
+              "asOf": "2026-08-19T12:08:41.806Z",
+              "source": "Coinbase",
+              "sourceUrl": "https://www.coinbase.com/price/bitcoin"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
