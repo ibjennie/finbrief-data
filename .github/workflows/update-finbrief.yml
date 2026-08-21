@@ -1,0 +1,84 @@
+name: FINBRIEF 免費晨晚報更新
+
+on:
+  schedule:
+    # GitHub cron 使用 UTC；臺北全年為 UTC+8。
+    - cron: "30 0 * * *"   # 臺北 08:30 晨報
+    - cron: "30 10 * * *"  # 臺北 18:30 晚報
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: 要更新的版本
+        required: true
+        type: choice
+        options:
+          - morning
+          - evening
+
+permissions:
+  contents: write
+
+concurrency:
+  group: finbrief-daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: Asia/Taipei
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: 下載資料儲存庫
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: 設定 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 判斷晨報或晚報
+        id: edition
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "value=${{ inputs.edition }}" >> "$GITHUB_OUTPUT"
+          elif [[ "${{ github.event.schedule }}" == "30 0 * * *" ]]; then
+            echo "value=morning" >> "$GITHUB_OUTPUT"
+          elif [[ "${{ github.event.schedule }}" == "30 10 * * *" ]]; then
+            echo "value=evening" >> "$GITHUB_OUTPUT"
+          else
+            echo "無法辨識排程時段" >&2
+            exit 1
+          fi
+
+      - name: 更新並完整驗證 latest.json
+        run: python scripts/update_finbrief.py --edition "${{ steps.edition.outputs.value }}"
+
+      - name: 檢查變更範圍
+        shell: bash
+        run: |
+          git diff --check
+          changed="$(git status --short)"
+          if [[ -n "$changed" ]] && [[ "$changed" != " M latest.json" ]]; then
+            echo "工作流程只能修改 latest.json，目前變更如下：" >&2
+            echo "$changed" >&2
+            exit 1
+          fi
+
+      - name: 提交更新
+        shell: bash
+        run: |
+          if git diff --quiet -- latest.json; then
+            echo "資料沒有變化，不建立空提交。"
+            exit 0
+          fi
+          git config user.name "finbrief-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- latest.json
+          git commit -m "自動更新 FINBRIEF ${{ steps.edition.outputs.value }}"
+          git push origin HEAD:main
