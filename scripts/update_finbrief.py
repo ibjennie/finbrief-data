@@ -538,6 +538,10 @@ def run(path: Path, edition: str, dry_run: bool) -> dict[str, Any]:
         data["report"]["events"] = future_events(today)
 
     carried, failures = refresh_markets(data, now, edition)
+    if len(carried) > 8:
+        raise RuntimeError(
+            f"可驗證的新行情不足（14 項中有 {len(carried)} 項沿用），保留原檔不發布"
+        )
     block = build_edition(data, edition, now, carried)
     data["report"]["editions"][edition] = block
     data["report"]["updatedAt"] = now.isoformat(timespec="seconds")
