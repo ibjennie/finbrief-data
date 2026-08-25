@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-24T19:49:49+08:00",
+  "generatedAt": "2026-08-25T11:28:55+08:00",
   "report": {
     "schemaVersion": 1,
-    "date": "2026-08-24",
-    "updatedAt": "2026-08-24T19:49:49+08:00",
+    "date": "2026-08-25",
+    "updatedAt": "2026-08-25T11:28:55+08:00",
     "contentStatus": "已查證",
     "editions": {
       "morning": {
         "label": "晨報",
         "time": "08:30",
-        "publishedAt": "2026-08-24T11:39:37+08:00",
+        "publishedAt": "2026-08-25T11:28:55+08:00",
         "kicker": "Morning intelligence",
         "readTime": "閱讀時間 8 分鐘",
         "headline": [
-          "臺股上漲、日股下跌，",
+          "臺股下跌、日股下跌，",
           "美股與長端利率呈現分歧，",
           "資金在股債匯與商品間重新定價"
         ],
-        "summary": "事實：臺灣加權最新為 45,224.29、上漲 0.65%；日經 225 為 66,016.36、下跌 0.30%。最近完成的美國交易日，S&P 500 上漲 0.43%、NASDAQ 上漲 0.43%，美國 10 年期殖利率為 4.74%，VIX 為 15.13。推論：股票方向、長端利率與波動指標並未形成單一訊號；14 項來源均取得可驗證資料。",
+        "summary": "事實：臺灣加權最新為 44,762.32、下跌 1.02%；日經 225 為 65,528.09、下跌 0.74%。最近完成的美國交易日，S&P 500 下跌 0.28%、NASDAQ 上漲 0.43%，美國 10 年期殖利率為 4.70%，VIX 為 15.85。推論：股票方向、長端利率與波動指標並未形成單一訊號；14 項來源均取得可驗證資料。",
         "risk": 64,
         "riskCopy": "中性偏謹慎 · 股債匯與商品訊號分歧",
         "leadTags": [
@@ -26,12 +26,12 @@
           "利率"
         ],
         "leadTitle": "市場不是只有漲跌：利率、波動與匯率正在決定風險能否延續",
-        "leadCopy": "事實：臺灣加權最新可得資料為 2026-08-21 的 45,224.29 點，單日上漲 0.65%；日經 225 最新為 66,016.36 點，單日下跌 0.30%。歐洲方面，EURO STOXX 50、DAX 與 FTSE 100分別為 6,462.22、26,136.56 與 10,816.56，變動為 +0.63%、+0.59% 與 +0.64%。美國最近完成交易日的 S&P 500 為 7,674.37、NASDAQ 為 26,180.45；同時 10 年期殖利率為 4.74%，VIX 為 15.13。商品與匯率端，布蘭特原油 $95.29、黃金 $4,649.78、美元／臺幣 31.783。所有數字均保留來源實際日期，尚未收盤或尚未發布的資料不會改標為今日。",
+        "leadCopy": "事實：臺灣加權最新可得資料為 2026-08-24 的 44,762.32 點，單日下跌 1.02%；日經 225 最新為 65,528.09 點，單日下跌 0.74%。歐洲方面，EURO STOXX 50、DAX 與 FTSE 100分別為 6,447.98、26,106.60 與 10,854.32，變動為 −0.22%、−0.11% 與 +0.35%。美國最近完成交易日的 S&P 500 為 7,652.86、NASDAQ 為 26,180.45；同時 10 年期殖利率為 4.70%，VIX 為 15.85。商品與匯率端，布蘭特原油 $95.29、黃金 $4,637.50、美元／臺幣 31.873。所有數字均保留來源實際日期，尚未收盤或尚未發布的資料不會改標為今日。",
         "why": "推論：長端殖利率會改變企業融資成本與股票估值折現率，VIX 反映投資人對短期波動的定價；美元與美元／臺幣則會影響跨境資金、進口成本與外資部位。若殖利率、VIX 與美元同步上升，高估值股票與新興市場通常承受較大壓力；若股指上漲但這三項指標沒有同步降溫，反彈仍可能只是區域或短期交易。接下來應具體觀察 NASDAQ 是否收復前一交易日波動、10 年期殖利率是否突破近期區間，以及布蘭特與黃金是否出現同方向的大幅變動。",
         "links": [
           {
             "label": "臺灣證交所｜臺灣加權",
-            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+            "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260824&type=ALLBUT0999&response=json"
           },
           {
             "label": "FRED｜日經 225",
@@ -49,8 +49,8 @@
         "impacts": [
           {
             "symbol": "臺股",
-            "label": "上漲",
-            "tone": "positive"
+            "label": "下跌",
+            "tone": "negative"
           },
           {
             "symbol": "NASDAQ",
@@ -59,8 +59,8 @@
           },
           {
             "symbol": "美國 10Y",
-            "label": "+5.0 bp",
-            "tone": "positive"
+            "label": "−4.0 bp",
+            "tone": "negative"
           }
         ],
         "importantNews": [
@@ -68,13 +68,13 @@
             "number": "02",
             "category": "亞洲",
             "region": "臺灣／日本",
-            "title": "臺灣加權 45,224.29、日經 225 66,016.36，亞洲市場方向需分開判讀",
-            "summary": "事實：臺灣加權於 2026-08-21 上漲 0.65%，日經 225 於 2026-08-21 下跌 0.30%。推論：兩地產業權重與匯率敏感度不同，同方向不必然代表相同驅動，應搭配半導體、日圓與外資流向觀察。",
+            "title": "臺灣加權 44,762.32、日經 225 65,528.09，亞洲市場方向需分開判讀",
+            "summary": "事實：臺灣加權於 2026-08-24 下跌 1.02%，日經 225 於 2026-08-24 下跌 0.74%。推論：兩地產業權重與匯率敏感度不同，同方向不必然代表相同驅動，應搭配半導體、日圓與外資流向觀察。",
             "impact": "臺股、日股、亞洲貨幣",
             "links": [
               {
                 "label": "臺灣證交所｜臺灣加權",
-                "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260821&type=ALLBUT0999&response=json"
+                "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260824&type=ALLBUT0999&response=json"
               },
               {
                 "label": "FRED｜日經 225",
@@ -86,8 +86,8 @@
             "number": "03",
             "category": "歐洲",
             "region": "歐元區／英國",
-            "title": "歐洲三大指數最新變動：+0.63%、+0.59%、+0.64%",
-            "summary": "事實：EURO STOXX 50 為 6,462.22，DAX 為 26,136.56，FTSE 100 為 10,816.56；各自資料時間保留為來源的真實時間。推論：同步變動代表區域風險偏好，走勢分歧則更可能反映產業結構、英鎊與歐元差異。",
+            "title": "歐洲三大指數最新變動：−0.22%、−0.11%、+0.35%",
+            "summary": "事實：EURO STOXX 50 為 6,447.98，DAX 為 26,106.60，FTSE 100 為 10,854.32；各自資料時間保留為來源的真實時間。推論：同步變動代表區域風險偏好，走勢分歧則更可能反映產業結構、英鎊與歐元差異。",
             "impact": "歐股、歐元、英鎊",
             "links": [
               {
@@ -108,8 +108,8 @@
             "number": "04",
             "category": "美股",
             "region": "美國",
-            "title": "S&P 500 +0.43%、NASDAQ +0.43%，VIX 收在 15.13",
-            "summary": "事實：最近完成交易日，S&P 500 上漲 0.43%、NASDAQ 上漲 0.43%，VIX 下跌 5.50%。推論：科技股、整體市場與波動指標若同時轉弱，風險訊號比單看一個指數更完整。",
+            "title": "S&P 500 −0.28%、NASDAQ +0.43%，VIX 收在 15.85",
+            "summary": "事實：最近完成交易日，S&P 500 下跌 0.28%、NASDAQ 上漲 0.43%，VIX 上漲 4.76%。推論：科技股、整體市場與波動指標若同時轉弱，風險訊號比單看一個指數更完整。",
             "impact": "美股、科技股、波動率",
             "links": [
               {
@@ -130,8 +130,8 @@
             "number": "05",
             "category": "利率與商品",
             "region": "全球",
-            "title": "美國 10 年期 4.74%、布蘭特 $95.29、黃金 $4,649.78",
-            "summary": "事實：美國 10 年期殖利率最新變動 +5.0 bp，布蘭特原油變動 +3.09%，黃金變動 +1.01%。推論：利率、能源與避險資產共同決定企業資金成本、通膨預期與風險承擔，三者同向走高時尤其需要留意。",
+            "title": "美國 10 年期 4.70%、布蘭特 $95.29、黃金 $4,637.50",
+            "summary": "事實：美國 10 年期殖利率最新變動 −4.0 bp，布蘭特原油變動 +3.09%，黃金變動 −0.31%。推論：利率、能源與避險資產共同決定企業資金成本、通膨預期與風險承擔，三者同向走高時尤其需要留意。",
             "impact": "美債、能源、黃金",
             "links": [
               {
@@ -152,8 +152,8 @@
             "number": "06",
             "category": "流動性",
             "region": "全球",
-            "title": "美元廣義指數 118.90，比特幣 24 小時變動 +0.18%",
-            "summary": "事實：美元廣義指數最新為 118.90、變動 −0.24%；美元／臺幣為 31.783；比特幣為 $77,051.50、24 小時變動 +0.18%。推論：美元與高波動資產的相對方向可協助判斷全球流動性是否正在收緊或轉鬆。",
+            "title": "美元廣義指數 118.06，比特幣 24 小時變動 +4.80%",
+            "summary": "事實：美元廣義指數最新為 118.06、變動 −0.16%；美元／臺幣為 31.873；比特幣為 $80,624.87、24 小時變動 +4.80%。推論：美元與高波動資產的相對方向可協助判斷全球流動性是否正在收緊或轉鬆。",
             "impact": "美元、臺幣、加密資產",
             "links": [
               {
@@ -175,9 +175,9 @@
           {
             "tag": "長端資金",
             "score": "8.9",
-            "eventDate": "2026-08-21",
-            "title": "美國 10 年期殖利率為 4.74%，單日變動 +5.0 bp",
-            "why": "事實：資料來源日期為 2026-08-21，來源保留在卡片連結。推論：長端殖利率會透過企業融資、房貸與股票折現率傳導到多個市場；即使股指短線上漲，只要實質資金成本沒有下降，高估值產業仍可能面臨估值壓力。接下來應比較 2 年期與 10 年期利差、美元方向及成長股相對表現，確認壓力是政策預期還是期限溢酬造成。",
+            "eventDate": "2026-08-24",
+            "title": "美國 10 年期殖利率為 4.70%，單日變動 −4.0 bp",
+            "why": "事實：資料來源日期為 2026-08-24，來源保留在卡片連結。推論：長端殖利率會透過企業融資、房貸與股票折現率傳導到多個市場；即使股指短線上漲，只要實質資金成本沒有下降，高估值產業仍可能面臨估值壓力。接下來應比較 2 年期與 10 年期利差、美元方向及成長股相對表現，確認壓力是政策預期還是期限溢酬造成。",
             "links": [
               {
                 "label": "美國財政部｜美國 10Y",
@@ -188,9 +188,9 @@
           {
             "tag": "匯率傳導",
             "score": "8.6",
-            "eventDate": "2026-08-21",
-            "title": "美元／臺幣最新為 31.783，變動 −0.13%",
-            "why": "事實：資料來源日期為 2026-08-21，來源保留在卡片連結。推論：匯率會改變進口能源與原料成本，也會影響外資換匯與出口企業的帳面收益；小幅變動若與美元廣義指數方向一致，可能逐步累積成資金流訊號。應持續比較美元廣義指數、外資買賣超與央行公開資料，而不是只看單日價格。",
+            "eventDate": "2026-08-24",
+            "title": "美元／臺幣最新為 31.873，變動 +0.18%",
+            "why": "事實：資料來源日期為 2026-08-24，來源保留在卡片連結。推論：匯率會改變進口能源與原料成本，也會影響外資換匯與出口企業的帳面收益；小幅變動若與美元廣義指數方向一致，可能逐步累積成資金流訊號。應持續比較美元廣義指數、外資買賣超與央行公開資料，而不是只看單日價格。",
             "links": [
               {
                 "label": "TradingView｜美元／臺幣",
@@ -216,7 +216,7 @@
       "evening": {
         "label": "晚報",
         "time": "18:30",
-        "publishedAt": "2026-08-24T19:49:49+08:00",
+        "publishedAt": null,
         "kicker": "Evening intelligence",
         "readTime": "閱讀時間 8 分鐘",
         "headline": [
@@ -421,17 +421,17 @@
       }
     },
     "dailyKnowledge": {
-      "number": "NO. 236",
-      "date": "2026.08.24",
-      "category": "地球科學",
+      "number": "NO. 237",
+      "date": "2026.08.25",
+      "category": "藝術保存",
       "readTime": "60 秒讀懂",
-      "title": "冰芯如何保存過去的大氣？",
-      "summary": "冰層形成時會封存微小氣泡，研究者可分析其中的氣體與同位素，重建過去的溫度、火山活動與大氣組成。",
-      "takeaway": "冰芯像是按年代堆疊的環境檔案，但解讀仍需配合定年與其他地質證據。",
+      "title": "博物館為什麼嚴格控制光線？",
+      "summary": "光會促使顏料、紙張與纖維發生不可逆的化學變化，因此博物館會依材質調整照度與展示時間。",
+      "takeaway": "降低光照不是讓展覽變暗而已，而是在可觀看與長期保存之間取得平衡。",
       "links": [
         {
-          "label": "NOAA｜古氣候代理資料",
-          "url": "https://www.ncei.noaa.gov/products/paleoclimatology"
+          "label": "加拿大保存研究所｜光線與文物",
+          "url": "https://www.canada.ca/en/conservation-institute/services/agents-deterioration/light.html"
         }
       ]
     },
@@ -463,8 +463,8 @@
     ]
   },
   "marketSnapshot": {
-    "generatedAt": "2026-08-24T19:49:49+08:00",
-    "edition": "晚報免費雲端資料快照",
+    "generatedAt": "2026-08-25T11:28:55+08:00",
+    "edition": "晨報免費雲端資料快照",
     "items": [
       {
         "key": "taiex",
@@ -479,50 +479,50 @@
       {
         "key": "nikkei",
         "label": "日經 225",
-        "value": "66,016.36",
-        "change": "−0.30%",
+        "value": "65,528.09",
+        "change": "−0.74%",
         "tone": "down",
-        "asOf": "2026-08-21",
+        "asOf": "2026-08-24",
         "source": "FRED",
         "sourceUrl": "https://fred.stlouisfed.org/series/NIKKEI225"
       },
       {
         "key": "eurostoxx50",
         "label": "EURO STOXX 50",
-        "value": "6,461.15",
-        "change": "−0.02%",
+        "value": "6,447.98",
+        "change": "−0.22%",
         "tone": "down",
-        "asOf": "2026-08-24T19:49:49+08:00",
+        "asOf": "2026-08-24",
         "source": "TradingView",
         "sourceUrl": "https://www.tradingview.com/symbols/STOXX-SX5E/"
       },
       {
         "key": "dax",
         "label": "DAX",
-        "value": "26,140.60",
-        "change": "+0.02%",
-        "tone": "up",
-        "asOf": "2026-08-24T19:49:49+08:00",
+        "value": "26,106.60",
+        "change": "−0.11%",
+        "tone": "down",
+        "asOf": "2026-08-24",
         "source": "TradingView",
         "sourceUrl": "https://www.tradingview.com/symbols/XETR-DAX/"
       },
       {
         "key": "ftse100",
         "label": "FTSE 100",
-        "value": "10,834.88",
-        "change": "+0.17%",
+        "value": "10,854.32",
+        "change": "+0.35%",
         "tone": "up",
-        "asOf": "2026-08-24T19:49:49+08:00",
+        "asOf": "2026-08-24",
         "source": "TradingView",
         "sourceUrl": "https://www.tradingview.com/symbols/FTSE-UKX/"
       },
       {
         "key": "sp500",
         "label": "S&P 500",
-        "value": "7,674.37",
-        "change": "+0.43%",
-        "tone": "up",
-        "asOf": "2026-08-21",
+        "value": "7,652.86",
+        "change": "−0.28%",
+        "tone": "down",
+        "asOf": "2026-08-24",
         "source": "FRED",
         "sourceUrl": "https://fred.stlouisfed.org/series/SP500"
       },
@@ -539,40 +539,40 @@
       {
         "key": "us10y",
         "label": "美國 10Y",
-        "value": "4.74%",
-        "change": "+5.0 bp",
-        "tone": "up",
-        "asOf": "2026-08-21",
+        "value": "4.70%",
+        "change": "−4.0 bp",
+        "tone": "down",
+        "asOf": "2026-08-24",
         "source": "美國財政部",
         "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv"
       },
       {
         "key": "dollar",
         "label": "美元廣義指數",
-        "value": "118.90",
-        "change": "−0.24%",
+        "value": "118.06",
+        "change": "−0.16%",
         "tone": "down",
-        "asOf": "2026-08-14",
+        "asOf": "2026-08-21",
         "source": "FRED",
         "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS"
       },
       {
         "key": "usdtwd",
         "label": "美元／臺幣",
-        "value": "31.805",
-        "change": "−0.06%",
-        "tone": "down",
-        "asOf": "2026-08-24T19:49:49+08:00",
+        "value": "31.873",
+        "change": "+0.18%",
+        "tone": "up",
+        "asOf": "2026-08-24",
         "source": "TradingView",
         "sourceUrl": "https://www.tradingview.com/symbols/USDTWD/"
       },
       {
         "key": "vix",
         "label": "VIX 恐慌指數",
-        "value": "15.13",
-        "change": "−5.50%",
-        "tone": "down",
-        "asOf": "2026-08-21",
+        "value": "15.85",
+        "change": "+4.76%",
+        "tone": "up",
+        "asOf": "2026-08-24",
         "source": "Cboe",
         "sourceUrl": "https://www.cboe.com/tradable-products/vix/"
       },
@@ -589,20 +589,20 @@
       {
         "key": "gold",
         "label": "黃金現貨",
-        "value": "$4,649.47",
-        "change": "+1.02%",
-        "tone": "up",
-        "asOf": "2026-08-24T19:49:49+08:00",
+        "value": "$4,637.50",
+        "change": "−0.31%",
+        "tone": "down",
+        "asOf": "2026-08-24",
         "source": "TradingView",
         "sourceUrl": "https://www.tradingview.com/symbols/XAUUSD/"
       },
       {
         "key": "bitcoin",
         "label": "比特幣",
-        "value": "$78,206.80",
-        "change": "+1.19%",
+        "value": "$80,624.87",
+        "change": "+4.80%",
         "tone": "up",
-        "asOf": "2026-08-24T19:49:49+08:00",
+        "asOf": "2026-08-25T11:28:55+08:00",
         "source": "Coinbase",
         "sourceUrl": "https://www.coinbase.com/price/bitcoin"
       }
@@ -613,7 +613,7 @@
     "entries": [
       {
         "date": "2026-08-24",
-        "archivedAt": "2026-08-24T19:49:49+08:00",
+        "archivedAt": "2026-08-25T11:28:55+08:00",
         "report": {
           "schemaVersion": 1,
           "date": "2026-08-24",
