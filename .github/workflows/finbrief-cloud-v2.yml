@@ -1,0 +1,122 @@
+name: FINBRIEF 雲端排程 v2
+
+on:
+  schedule:
+    # GitHub cron 使用 UTC；刻意避開整點，降低排程因尖峰負載被捨棄的機率。
+    - cron: "37,52 0 * * *"  # 臺北 08:37、08:52 晨報
+    - cron: "7 1 * * *"      # 臺北 09:07 晨報備援
+    - cron: "37,52 10 * * *" # 臺北 18:37、18:52 晚報
+    - cron: "7 11 * * *"     # 臺北 19:07 晚報備援
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: 要驗證或發布的版本
+        required: true
+        default: morning
+        type: choice
+        options:
+          - morning
+          - evening
+      mode:
+        description: diagnostic 只驗證；publish 才會提交 latest.json
+        required: true
+        default: diagnostic
+        type: choice
+        options:
+          - diagnostic
+          - publish
+
+permissions:
+  contents: write
+
+concurrency:
+  group: finbrief-daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: Asia/Taipei
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: 下載正式資料儲存庫
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: 設定 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 判斷版本與模式
+        id: config
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "edition=${{ inputs.edition }}" >> "$GITHUB_OUTPUT"
+            echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
+          elif [[ "${{ github.event.schedule }}" == "37,52 0 * * *" ]] || \
+               [[ "${{ github.event.schedule }}" == "7 1 * * *" ]]; then
+            echo "edition=morning" >> "$GITHUB_OUTPUT"
+            echo "mode=publish" >> "$GITHUB_OUTPUT"
+          elif [[ "${{ github.event.schedule }}" == "37,52 10 * * *" ]] || \
+               [[ "${{ github.event.schedule }}" == "7 11 * * *" ]]; then
+            echo "edition=evening" >> "$GITHUB_OUTPUT"
+            echo "mode=publish" >> "$GITHUB_OUTPUT"
+          else
+            echo "無法辨識觸發來源" >&2
+            exit 1
+          fi
+
+      - name: 顯示雲端執行資訊
+        shell: bash
+        run: |
+          echo "event=${{ github.event_name }}"
+          echo "schedule=${{ github.event.schedule }}"
+          echo "edition=${{ steps.config.outputs.edition }}"
+          echo "mode=${{ steps.config.outputs.mode }}"
+          date '+taipei_time=%Y-%m-%dT%H:%M:%S%z'
+
+      - name: 診斷模式（不修改資料）
+        if: steps.config.outputs.mode == 'diagnostic'
+        run: >-
+          python scripts/update_finbrief.py
+          --edition "${{ steps.config.outputs.edition }}"
+          --dry-run
+          --force
+
+      - name: 發布模式（更新並完整驗證）
+        if: steps.config.outputs.mode == 'publish'
+        run: >-
+          python scripts/update_finbrief.py
+          --edition "${{ steps.config.outputs.edition }}"
+
+      - name: 檢查發布變更範圍
+        if: steps.config.outputs.mode == 'publish'
+        shell: bash
+        run: |
+          git diff --check
+          changed="$(git status --short)"
+          if [[ -n "$changed" ]] && [[ "$changed" != " M latest.json" ]]; then
+            echo "工作流程只能修改 latest.json，目前變更如下：" >&2
+            echo "$changed" >&2
+            exit 1
+          fi
+
+      - name: 提交發布資料
+        if: steps.config.outputs.mode == 'publish'
+        shell: bash
+        run: |
+          if git diff --quiet -- latest.json; then
+            echo "今日版本已發布或資料沒有變化，不建立空提交。"
+            exit 0
+          fi
+          git config user.name "finbrief-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- latest.json
+          git commit -m "自動更新 FINBRIEF ${{ steps.config.outputs.edition }}"
+          git push origin HEAD:main
