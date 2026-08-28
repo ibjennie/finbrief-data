@@ -328,7 +328,10 @@ def build_edition(data: dict[str, Any], edition: str, now: datetime, carried: li
             f"VIX {direction(vix)} {pct(vix)}，美國 10 年期殖利率為 {y10['value']}。美元廣義指數為 {dollar['value']}，"
             f"布蘭特原油為 {brent['value']}。推論：晨間重點是隔夜美股風險如何傳到臺日股市，而不是重複解讀尚未開盤的亞洲價格{carry_copy}。"
         )
-        lead_title = "隔夜風險如何交棒亞洲：先看美股、利率與美元"
+        lead_title = (
+            f"隔夜美股{direction(sp)}、VIX {vix['value']}："
+            "亞洲開盤先看利率與美元"
+        )
         lead_tags = ["隔夜市場", "亞洲開盤"]
         risk_copy = "晨間觀察 · 隔夜美股與利率訊號等待亞洲確認"
         lead_copy = (
@@ -355,7 +358,10 @@ def build_edition(data: dict[str, Any], edition: str, now: datetime, carried: li
             f"歐洲時段 EURO STOXX 50、DAX、FTSE 100 分別變動 {eu['change']}、{dax['change']}、{ftse['change']}。"
             f"推論：晚報重點是亞洲收盤結果能否獲得歐洲與稍後美股確認，而不是沿用晨間的隔夜敘事{carry_copy}。"
         )
-        lead_title = "亞洲收盤後，風險偏好能否接力到歐洲與美國？"
+        lead_title = (
+            f"臺股{direction(t)}、日股{direction(n)}："
+            "歐美接力檢驗區域風險偏好"
+        )
         lead_tags = ["亞洲收盤", "歐美接力"]
         risk_copy = "晚間觀察 · 亞洲結果等待歐美時段確認"
         lead_copy = (
