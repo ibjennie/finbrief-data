@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-28T08:53:24+08:00",
+  "generatedAt": "2026-08-28T11:53:00+08:00",
   "report": {
     "schemaVersion": 1,
     "date": "2026-08-28",
@@ -611,6 +611,565 @@
   "reportHistory": {
     "schemaVersion": 1,
     "entries": [
+      {
+        "date": "2026-08-27",
+        "archivedAt": "2026-08-28T11:53:00+08:00",
+        "report": {
+          "schemaVersion": 1,
+          "date": "2026-08-27",
+          "updatedAt": "2026-08-27T23:55:00+08:00",
+          "contentStatus": "已查證・歷史補建",
+          "editions": {
+            "morning": {
+              "label": "晨報",
+              "time": "08:30",
+              "publishedAt": "2026-08-27T08:37:00+08:00",
+              "kicker": "Morning intelligence",
+              "readTime": "閱讀時間 8 分鐘",
+              "headline": [
+                "輝達營收年增 106%、資料中心營收翻倍，",
+                "隔夜 NASDAQ 小跌 0.08%、美國 10 年期升至 4.66%，",
+                "亞洲開盤先判斷 AI 資本支出能否抵銷利率壓力"
+              ],
+              "summary": "事實：輝達公布第二季營收 962 億美元，較去年同期成長 106%；資料中心營收 890 億美元、年增 117%。同一個已完成的美國交易日，S&P 500 小跌 0.02%、NASDAQ 下跌 0.08%，VIX 降至 15.21，但美國 10 年期殖利率升至 4.66%。推論：財報證實 AI 基礎建設需求仍強，卻沒有消除折現率與市場期待已高的壓力；亞洲開盤要看半導體供應鏈能否把公司層級利多轉成指數廣度。",
+              "risk": 57,
+              "riskCopy": "AI 需求獲得財報確認 · 利率與高期待仍限制追價空間",
+              "leadTags": [
+                "AI 資本支出",
+                "半導體供應鏈"
+              ],
+              "leadTitle": "輝達營收翻倍，但利率升至 4.66%：亞洲科技股面臨雙重定價",
+              "leadCopy": "事實：輝達在 8 月 26 日美股盤後公布截至 7 月 26 日的第二季營收 962 億美元，季增 18%、年增 106%；資料中心營收達 890 億美元、年增 117%，非一般性市場傳聞，而是公司正式財報。同一個已完成交易日，S&P 500 收在 7,675.70、下跌 0.02%，NASDAQ 收在 26,130.20、下跌 0.08%；VIX 降至 15.21，美國 10 年期殖利率則由 4.64% 升至 4.66%。臺灣加權前一日收在 45,832.62，日經 225 收在 66,262.16。這組資料表示企業需求訊號明顯偏強，但總體資金成本並未同步轉鬆。",
+              "why": "推論：輝達財報會先影響 GPU、先進封裝、記憶體、伺服器與電力設備供應鏈的獲利預期，再透過大型科技股權重傳到 NASDAQ、臺股與日股；另一方面，10 年期殖利率上升會提高遠期現金流的折現率，使高估值公司即使基本面改善，也可能出現利多不漲。開盤後應具體觀察臺灣半導體權值股相對大盤的強弱、日經科技股是否同步、臺幣是否轉強，以及前一小時成交量能否高於近期平均；若只有少數 AI 權值股上漲而大盤廣度收窄，代表市場仍在交易集中度，而非全面風險偏好回升。",
+              "links": [
+                {
+                  "label": "NVIDIA｜2027 會計年度第二季財報",
+                  "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx"
+                },
+                {
+                  "label": "FRED｜NASDAQ",
+                  "url": "https://fred.stlouisfed.org/series/NASDAQCOM"
+                },
+                {
+                  "label": "美國財政部｜美國 10Y",
+                  "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv"
+                },
+                {
+                  "label": "臺灣證交所｜臺灣加權",
+                  "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260826&type=ALLBUT0999&response=json"
+                }
+              ],
+              "impacts": [
+                {
+                  "symbol": "AI 供應鏈",
+                  "label": "財報支撐",
+                  "tone": "positive"
+                },
+                {
+                  "symbol": "NASDAQ",
+                  "label": "前一日小跌",
+                  "tone": "negative"
+                },
+                {
+                  "symbol": "美國 10Y",
+                  "label": "+2.0 bp",
+                  "tone": "negative"
+                }
+              ],
+              "importantNews": [
+                {
+                  "number": "02",
+                  "category": "科技",
+                  "region": "美國／全球",
+                  "title": "輝達第二季營收 962 億美元，資料中心營收年增 117%",
+                  "summary": "事實：輝達正式財報顯示營收季增 18%、年增 106%，資料中心營收達 890 億美元。推論：需求強度會提高先進製程、封裝、記憶體、網路與電力設備的訂單能見度，但市場已給予高成長預期，後續仍要比較毛利率與下一季營收指引。",
+                  "impact": "AI 晶片、臺灣供應鏈、NASDAQ",
+                  "links": [
+                    {
+                      "label": "NVIDIA｜第二季財報",
+                      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx"
+                    }
+                  ]
+                },
+                {
+                  "number": "03",
+                  "category": "總體經濟",
+                  "region": "美國",
+                  "title": "美國第二季實質 GDP 第二次估計為年率 1.5%",
+                  "summary": "事實：BEA 將第二季實質 GDP 成長列為年率 1.5%，低於第一季的 2.1%；消費、出口與投資提供正貢獻，政府支出下降形成抵銷。推論：成長放緩但未停滯，使市場難以單押快速降息，利率與成長股估值可能持續拉鋸。",
+                  "impact": "美債、美元、成長股",
+                  "links": [
+                    {
+                      "label": "BEA｜美國 GDP",
+                      "url": "https://www.bea.gov/data/gdp/gross-domestic-product"
+                    }
+                  ]
+                },
+                {
+                  "number": "04",
+                  "category": "製造業",
+                  "region": "美國／全球",
+                  "title": "美國 7 月耐久財新訂單增加 1.1%，運輸設備領漲",
+                  "summary": "事實：美國人口普查局公布耐久財新訂單增加 36 億美元至 3,393 億美元；排除運輸後增加 0.4%。推論：企業設備需求仍具韌性，可支撐工業與科技資本支出，但也可能減少市場對快速降息的押注。",
+                  "impact": "工業股、資本支出、美債",
+                  "links": [
+                    {
+                      "label": "美國人口普查局｜耐久財",
+                      "url": "https://www.census.gov/manufacturing/m3/adv/current/index.html"
+                    }
+                  ]
+                },
+                {
+                  "number": "05",
+                  "category": "歐洲貿易",
+                  "region": "歐盟",
+                  "title": "歐盟第二季商品貿易轉為 218 億歐元逆差，能源缺口擴大",
+                  "summary": "事實：Eurostat 指出歐盟第二季商品進口 7,018 億歐元，高於出口 6,800 億歐元；能源產品逆差由第一季 713 億擴至 1,011 億歐元。推論：能源外部依賴會透過生產成本、歐元與企業毛利影響歐股，不能只用總體股指漲跌判斷歐洲風險。",
+                  "impact": "歐元、歐洲工業、能源成本",
+                  "links": [
+                    {
+                      "label": "Eurostat｜第二季商品貿易",
+                      "url": "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260825-1"
+                    }
+                  ]
+                },
+                {
+                  "number": "06",
+                  "category": "市場條件",
+                  "region": "全球",
+                  "title": "VIX 降至 15.21、油價跌至 88.24 美元，但長債殖利率上升",
+                  "summary": "事實：VIX 下跌 1.55%，布蘭特原油最近可得值下跌 4.82%，美國 10 年期殖利率則上升 2 個基點。推論：波動率與能源壓力下降有利風險資產，但長端利率走高仍會限制高估值類股的擴張空間。",
+                  "impact": "波動率、能源、高估值股票",
+                  "links": [
+                    {
+                      "label": "Cboe｜VIX 恐慌指數",
+                      "url": "https://www.cboe.com/tradable-products/vix/"
+                    },
+                    {
+                      "label": "FRED／EIA｜布蘭特原油",
+                      "url": "https://fred.stlouisfed.org/series/DCOILBRENTEU"
+                    },
+                    {
+                      "label": "美國財政部｜美國 10Y",
+                      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv"
+                    }
+                  ]
+                }
+              ],
+              "underRadar": [
+                {
+                  "tag": "歐洲能源帳",
+                  "score": "8.8",
+                  "eventDate": "2026-08-25",
+                  "title": "歐盟能源產品逆差單季擴至 1,011 億歐元",
+                  "why": "事實：Eurostat 顯示歐盟第二季商品貿易轉為逆差，主要差異來自能源產品逆差擴大。推論：這不是只影響能源股的統計；若能源成本維持高位，會同時壓縮製造業毛利、削弱歐元區實質所得，並改變 ECB 的通膨與成長權衡。後續應觀察天然氣與原油價格、歐元匯率，以及德國製造業訂單是否同步轉弱。",
+                  "links": [
+                    {
+                      "label": "Eurostat｜歐盟第二季商品貿易",
+                      "url": "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260825-1"
+                    }
+                  ]
+                },
+                {
+                  "tag": "企業汰換",
+                  "score": "8.5",
+                  "eventDate": "2026-08-17",
+                  "title": "歐盟第二季企業註冊減少 0.5%，破產增加 5.7%",
+                  "why": "事實：Eurostat 資料顯示企業註冊季減 0.5%，破產季增 5.7%；運輸業破產增加 11.4%。推論：破產與新設企業同時惡化，會先影響銀行信用成本、商用不動產與就業，再逐步反映到總體數據。接下來應追蹤銀行呆帳準備、企業貸款利率與運輸需求，判斷壓力是否由個別產業擴散。",
+                  "links": [
+                    {
+                      "label": "Eurostat｜企業註冊與破產",
+                      "url": "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260817-1"
+                    }
+                  ]
+                },
+                {
+                  "tag": "消費韌性",
+                  "score": "8.3",
+                  "eventDate": "2026-08-26",
+                  "title": "GDP 成長放緩之際，個人所得與消費資料成為利率關鍵",
+                  "why": "事實：BEA 在同日更新第二季 GDP 與 7 月個人所得及支出資料，提供成長、消費與價格的同一套國民帳基準。推論：若名目消費增加但實質消費與所得沒有同步，企業營收的表面韌性可能由價格而非數量支撐；市場應同時比較實質 PCE、儲蓄率與核心 PCE 價格，而不是只看單一成長率。",
+                  "links": [
+                    {
+                      "label": "BEA｜7 月個人所得與支出",
+                      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026"
+                    }
+                  ]
+                }
+              ]
+            },
+            "evening": {
+              "label": "晚報",
+              "time": "18:30",
+              "publishedAt": "2026-08-27T23:55:00+08:00",
+              "kicker": "Evening intelligence",
+              "readTime": "閱讀時間 8 分鐘",
+              "headline": [
+                "臺灣加權上漲 0.31%、日經下跌 0.20%，",
+                "歐洲股市分歧，美國商品貿易逆差擴至 1,188 億美元，",
+                "晚間焦點轉向輝達能否帶動美股科技股接棒"
+              ],
+              "summary": "事實：臺灣加權收在 45,975.22、上漲 0.31%，日經 225 收在 66,131.98、下跌 0.20%；歐洲三大指數分別變動 −0.71%、+0.31%、−0.79%。美國人口普查局同日公布 7 月商品貿易逆差擴至 1,188 億美元，批發與零售庫存分別月增 1.3% 與 0.7%。推論：AI 財報利多沒有在亞洲形成全面同步上漲，晚間要由美股科技股、美元與長端殖利率確認這是供應鏈輪動，還是更廣泛的風險偏好。",
+              "risk": 54,
+              "riskCopy": "亞洲與歐洲走勢分歧 · 美股科技股成為最後確認",
+              "leadTags": [
+                "亞洲收盤",
+                "美國貿易與庫存"
+              ],
+              "leadTitle": "AI 利多未帶動全球同步上漲：臺日分歧、歐股偏弱等待美股確認",
+              "leadCopy": "事實：8 月 27 日臺灣加權上漲 0.31% 至 45,975.22，日經 225 下跌 0.20% 至 66,131.98；EURO STOXX 50 與 FTSE 100 分別下跌 0.71% 與 0.79%，DAX 則上漲 0.31%。這表示輝達營收年增 106% 的利多並未自動轉化成所有區域指數同步上漲。同日晚間，美國人口普查局公布 7 月商品貿易逆差由 1,014 億美元擴至 1,188 億美元，出口減少 60 億美元、進口增加 114 億美元；批發庫存月增 1.3%，零售庫存月增 0.7%。美國最近完成交易日的 NASDAQ 小跌 0.08%，10 年期殖利率為 4.66%，VIX 為 15.21。",
+              "why": "推論：若輝達財報首先推升晶片與伺服器供應鏈，但臺日與歐洲指數仍分歧，市場可能正在區分 AI 資本支出受益者與受利率、能源或外需壓力影響的產業。商品貿易逆差擴大與庫存增加，會經由美元需求、企業補庫存速度、運輸需求與未來 GDP 淨出口項目傳導到股票與債券。今晚應觀察 NASDAQ 開盤一小時能否突破前一日高點、輝達漲幅是否擴散至半導體與雲端服務商、美國 10 年期是否突破 4.70%，以及美元是否在逆差數據後轉強；只有科技股廣度擴大且殖利率沒有同步急升，財報利多才較可能延續。",
+              "links": [
+                {
+                  "label": "臺灣證交所｜臺灣加權",
+                  "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260827&type=ALLBUT0999&response=json"
+                },
+                {
+                  "label": "FRED｜日經 225",
+                  "url": "https://fred.stlouisfed.org/series/NIKKEI225"
+                },
+                {
+                  "label": "美國人口普查局｜7 月先行經濟指標",
+                  "url": "https://www.census.gov/econ/indicators/current/index.html"
+                },
+                {
+                  "label": "NVIDIA｜第二季財報",
+                  "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx"
+                }
+              ],
+              "impacts": [
+                {
+                  "symbol": "臺股",
+                  "label": "上漲 0.31%",
+                  "tone": "positive"
+                },
+                {
+                  "symbol": "日經",
+                  "label": "下跌 0.20%",
+                  "tone": "negative"
+                },
+                {
+                  "symbol": "美國貿易",
+                  "label": "逆差擴大",
+                  "tone": "negative"
+                }
+              ],
+              "importantNews": [
+                {
+                  "number": "02",
+                  "category": "亞洲",
+                  "region": "臺灣／日本",
+                  "title": "臺股上漲 0.31%、日股下跌 0.20%，AI 利多呈現區域分歧",
+                  "summary": "事實：臺灣加權收在 45,975.22，日經 225 收在 66,131.98；兩地在同一交易日方向相反。推論：臺灣半導體權重、日圓與日本內需股結構不同，不能把單一 AI 財報直接推論為亞洲市場全面上漲。",
+                  "impact": "臺股、日股、半導體、亞洲匯率",
+                  "links": [
+                    {
+                      "label": "臺灣證交所｜臺灣加權",
+                      "url": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260827&type=ALLBUT0999&response=json"
+                    },
+                    {
+                      "label": "FRED｜日經 225",
+                      "url": "https://fred.stlouisfed.org/series/NIKKEI225"
+                    }
+                  ]
+                },
+                {
+                  "number": "03",
+                  "category": "美國貿易",
+                  "region": "美國／全球",
+                  "title": "美國 7 月商品貿易逆差擴至 1,188 億美元",
+                  "summary": "事實：出口降至 1,994 億美元、進口升至 3,182 億美元，使逆差較 6 月增加 174 億美元。推論：逆差擴大會壓低 GDP 的淨出口貢獻，也可能反映內需、提前進口或價格變動；需配合最終貿易與消費資料判斷。",
+                  "impact": "美元、GDP、航運、零售供應鏈",
+                  "links": [
+                    {
+                      "label": "美國人口普查局｜先行經濟指標",
+                      "url": "https://www.census.gov/econ/indicators/current/index.html"
+                    }
+                  ]
+                },
+                {
+                  "number": "04",
+                  "category": "企業財報",
+                  "region": "美國／全球",
+                  "title": "輝達資料中心營收 890 億美元，美股接棒檢驗高期待",
+                  "summary": "事實：資料中心營收年增 117%，公司整體營收年增 106%，正式數據確認 AI 基礎建設需求。推論：美股若只由單一權值股上漲而市場廣度未擴大，估值集中風險仍在；若晶片、雲端與電力設備同步走強，訊號才更完整。",
+                  "impact": "NASDAQ、AI 晶片、雲端資本支出",
+                  "links": [
+                    {
+                      "label": "NVIDIA｜第二季財報",
+                      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx"
+                    }
+                  ]
+                },
+                {
+                  "number": "05",
+                  "category": "歐洲",
+                  "region": "歐元區／英國",
+                  "title": "EURO STOXX 50 與 FTSE 100 下跌，DAX 逆勢上漲",
+                  "summary": "事實：EURO STOXX 50、DAX、FTSE 100 分別變動 −0.71%、+0.31%、−0.79%。推論：區域內分歧更可能反映產業權重、匯率與能源曝險，而非單一全球風險方向，應比較銀行、出口與能源類股。",
+                  "impact": "歐股、歐元、英鎊",
+                  "links": [
+                    {
+                      "label": "TradingView｜EURO STOXX 50",
+                      "url": "https://www.tradingview.com/symbols/STOXX-SX5E/"
+                    },
+                    {
+                      "label": "TradingView｜DAX",
+                      "url": "https://www.tradingview.com/symbols/XETR-DAX/"
+                    },
+                    {
+                      "label": "TradingView｜FTSE 100",
+                      "url": "https://www.tradingview.com/symbols/FTSE-UKX/"
+                    }
+                  ]
+                },
+                {
+                  "number": "06",
+                  "category": "庫存與流動性",
+                  "region": "美國／全球",
+                  "title": "美國批發庫存月增 1.3%、零售庫存月增 0.7%",
+                  "summary": "事實：7 月批發庫存估為 9,591 億美元，零售庫存估為 8,385 億美元。推論：庫存增加可能支撐當期 GDP，也可能在銷售放緩時轉成未來去庫存壓力；應與零售銷售、運價及企業毛利一起解讀。",
+                  "impact": "零售、運輸、企業毛利、GDP",
+                  "links": [
+                    {
+                      "label": "美國人口普查局｜庫存先行估計",
+                      "url": "https://www.census.gov/econ/indicators/current/index.html"
+                    }
+                  ]
+                }
+              ],
+              "underRadar": [
+                {
+                  "tag": "勞動調整",
+                  "score": "8.9",
+                  "eventDate": "2026-08-27",
+                  "title": "2023 至 2025 年有 330 萬名長期任職者遭工作取代",
+                  "why": "事實：BLS 指出 330 萬名任職至少三年的勞工在三年間遭工作取代，其中 64.2 萬人來自製造業；44.4% 因職位或班次取消而失去工作。推論：這項資料比單月失業率更接近產業重組與自動化壓力，可能經由薪資成長、消費信心與區域信用風險傳到市場。後續應觀察再就業率、製造業職缺與失業救濟申請是否同向惡化。",
+                  "links": [
+                    {
+                      "label": "BLS｜2023–2025 年工作取代",
+                      "url": "https://www.bls.gov/news.release/disp.nr0.htm"
+                    }
+                  ]
+                },
+                {
+                  "tag": "庫存週期",
+                  "score": "8.6",
+                  "eventDate": "2026-08-27",
+                  "title": "批發庫存單月增加 1.3%，速度快於零售庫存",
+                  "why": "事實：美國 7 月批發庫存月增 1.3%、年增 5.7%，零售庫存月增 0.7%、年增 3.8%。推論：若銷售沒有跟上，較快的批發庫存累積可能先壓低新訂單、運價與企業毛利；若需求維持，則可能只是為旺季補庫存。應比較庫存銷售比、貨櫃運價與耐久財未完成訂單，確認週期方向。",
+                  "links": [
+                    {
+                      "label": "美國人口普查局｜先行庫存估計",
+                      "url": "https://www.census.gov/econ/indicators/current/index.html"
+                    }
+                  ]
+                },
+                {
+                  "tag": "能源外部平衡",
+                  "score": "8.4",
+                  "eventDate": "2026-08-25",
+                  "title": "歐盟能源逆差擴大，使商品貿易三年來首度轉負",
+                  "why": "事實：歐盟第二季商品貿易出現 218 億歐元逆差，能源產品逆差擴至 1,011 億歐元。推論：能源進口帳會同時影響歐元、通膨、製造業成本與財政補貼需求；即使原油短線下跌，累積的季度外部缺口仍可能影響企業盈餘。接下來應觀察歐洲天然氣價格、工業產出與歐元是否共同反映壓力。",
+                  "links": [
+                    {
+                      "label": "Eurostat｜歐盟商品貿易",
+                      "url": "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260825-1"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "dailyKnowledge": {
+            "number": "NO. 239",
+            "date": "2026.08.27",
+            "category": "考古方法",
+            "readTime": "60 秒讀懂",
+            "title": "樹輪可以精確到年份嗎？",
+            "summary": "樹木每年的生長輪寬度會受到氣候與環境影響；研究者把不同年代木材的紋理交叉比對，可建立跨越數百至數千年的連續年表。",
+            "takeaway": "樹輪定年同時提供年代與環境資訊，但必須使用同地區、相近樹種建立可靠的比對序列。",
+            "links": [
+              {
+                "label": "美國國家公園管理局｜樹輪年代學",
+                "url": "https://www.nps.gov/articles/000/dendrochronology.htm"
+              }
+            ]
+          },
+          "events": [
+            {
+              "time": "08.28 22:00",
+              "region": "美國",
+              "event": "第一季縣級就業與薪資、就業基準初估",
+              "level": "中"
+            },
+            {
+              "time": "09.01 22:00",
+              "region": "美國",
+              "event": "7 月職缺與勞動力流動調查（JOLTS）",
+              "level": "高"
+            },
+            {
+              "time": "09.03 20:30",
+              "region": "美國",
+              "event": "7 月國際商品與服務貿易",
+              "level": "高"
+            },
+            {
+              "time": "09.04 20:30",
+              "region": "美國",
+              "event": "8 月就業報告",
+              "level": "高"
+            }
+          ]
+        },
+        "marketSnapshot": {
+          "generatedAt": "2026-08-27T23:55:00+08:00",
+          "edition": "2026-08-27 補建晚報資料快照",
+          "items": [
+            {
+              "key": "taiex",
+              "label": "臺灣加權",
+              "value": "45,975.22",
+              "change": "+0.31%",
+              "tone": "up",
+              "asOf": "2026-08-27",
+              "source": "臺灣證交所",
+              "sourceUrl": "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date=20260827&type=ALLBUT0999&response=json"
+            },
+            {
+              "key": "nikkei",
+              "label": "日經 225",
+              "value": "66,131.98",
+              "change": "−0.20%",
+              "tone": "down",
+              "asOf": "2026-08-27",
+              "source": "FRED",
+              "sourceUrl": "https://fred.stlouisfed.org/series/NIKKEI225"
+            },
+            {
+              "key": "eurostoxx50",
+              "label": "EURO STOXX 50",
+              "value": "6,424.73",
+              "change": "−0.71%",
+              "tone": "down",
+              "asOf": "2026-08-27",
+              "source": "TradingView",
+              "sourceUrl": "https://www.tradingview.com/symbols/STOXX-SX5E/"
+            },
+            {
+              "key": "dax",
+              "label": "DAX",
+              "value": "26,367.24",
+              "change": "+0.31%",
+              "tone": "up",
+              "asOf": "2026-08-27",
+              "source": "TradingView",
+              "sourceUrl": "https://www.tradingview.com/symbols/XETR-DAX/"
+            },
+            {
+              "key": "ftse100",
+              "label": "FTSE 100",
+              "value": "10,792.54",
+              "change": "−0.79%",
+              "tone": "down",
+              "asOf": "2026-08-27",
+              "source": "TradingView",
+              "sourceUrl": "https://www.tradingview.com/symbols/FTSE-UKX/"
+            },
+            {
+              "key": "sp500",
+              "label": "S&P 500",
+              "value": "7,675.70",
+              "change": "−0.02%",
+              "tone": "down",
+              "asOf": "2026-08-26",
+              "source": "FRED",
+              "sourceUrl": "https://fred.stlouisfed.org/series/SP500"
+            },
+            {
+              "key": "nasdaq",
+              "label": "NASDAQ",
+              "value": "26,130.20",
+              "change": "−0.08%",
+              "tone": "down",
+              "asOf": "2026-08-26",
+              "source": "FRED",
+              "sourceUrl": "https://fred.stlouisfed.org/series/NASDAQCOM"
+            },
+            {
+              "key": "us10y",
+              "label": "美國 10Y",
+              "value": "4.66%",
+              "change": "+2.0 bp",
+              "tone": "up",
+              "asOf": "2026-08-26",
+              "source": "美國財政部",
+              "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv"
+            },
+            {
+              "key": "dollar",
+              "label": "美元廣義指數",
+              "value": "118.06",
+              "change": "−0.16%",
+              "tone": "down",
+              "asOf": "2026-08-21",
+              "source": "FRED",
+              "sourceUrl": "https://fred.stlouisfed.org/series/DTWEXBGS"
+            },
+            {
+              "key": "usdtwd",
+              "label": "美元／臺幣",
+              "value": "31.656",
+              "change": "−0.04%",
+              "tone": "down",
+              "asOf": "2026-08-27",
+              "source": "TradingView",
+              "sourceUrl": "https://www.tradingview.com/symbols/USDTWD/"
+            },
+            {
+              "key": "vix",
+              "label": "VIX 恐慌指數",
+              "value": "15.21",
+              "change": "−1.55%",
+              "tone": "down",
+              "asOf": "2026-08-26",
+              "source": "Cboe",
+              "sourceUrl": "https://www.cboe.com/tradable-products/vix/"
+            },
+            {
+              "key": "brent",
+              "label": "布蘭特原油",
+              "value": "$88.24",
+              "change": "−4.82%",
+              "tone": "down",
+              "asOf": "2026-08-25",
+              "source": "FRED／EIA",
+              "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU"
+            },
+            {
+              "key": "gold",
+              "label": "黃金現貨",
+              "value": "$4,588.30",
+              "change": "−0.28%",
+              "tone": "down",
+              "asOf": "2026-08-27",
+              "source": "TradingView",
+              "sourceUrl": "https://www.tradingview.com/symbols/XAUUSD/"
+            },
+            {
+              "key": "bitcoin",
+              "label": "比特幣",
+              "value": "$80,221.31",
+              "change": "+1.51%",
+              "tone": "up",
+              "asOf": "2026-08-27T23:00:00+08:00",
+              "source": "Coinbase",
+              "sourceUrl": "https://www.coinbase.com/price/bitcoin"
+            }
+          ]
+        }
+      },
       {
         "date": "2026-08-26",
         "archivedAt": "2026-08-28T08:53:24+08:00",
