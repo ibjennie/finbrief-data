@@ -317,31 +317,60 @@ def build_edition(data: dict[str, Any], edition: str, now: datetime, carried: li
     kicker = "Morning intelligence" if edition == "morning" else "Evening intelligence"
     carry_copy = "；部分免費來源沿用最近真實日期" if carried else "；14 項來源均取得可驗證資料"
 
-    headline = [
-        f"臺股{direction(t)}、日股{direction(n)}，",
-        f"美股與長端利率呈現分歧，",
-        "資金在股債匯與商品間重新定價",
-    ]
-    summary = (
-        f"事實：臺灣加權最新為 {t['value']}、{direction(t)} {pct(t)}；日經 225 為 {n['value']}、"
-        f"{direction(n)} {pct(n)}。最近完成的美國交易日，S&P 500 {direction(sp)} {pct(sp)}、"
-        f"NASDAQ {direction(nas)} {pct(nas)}，美國 10 年期殖利率為 {y10['value']}，VIX 為 {vix['value']}。"
-        f"推論：股票方向、長端利率與波動指標並未形成單一訊號{carry_copy}。"
-    )
-    lead_copy = (
-        f"事實：臺灣加權最新可得資料為 {t['asOf']} 的 {t['value']} 點，單日{direction(t)} {pct(t)}；"
-        f"日經 225 最新為 {n['value']} 點，單日{direction(n)} {pct(n)}。歐洲方面，EURO STOXX 50、DAX 與 FTSE 100"
-        f"分別為 {eu['value']}、{dax['value']} 與 {ftse['value']}，變動為 {eu['change']}、{dax['change']} 與 {ftse['change']}。"
-        f"美國最近完成交易日的 S&P 500 為 {sp['value']}、NASDAQ 為 {nas['value']}；同時 10 年期殖利率為 {y10['value']}，"
-        f"VIX 為 {vix['value']}。商品與匯率端，布蘭特原油 {brent['value']}、黃金 {gold['value']}、美元／臺幣 {twd['value']}。"
-        "所有數字均保留來源實際日期，尚未收盤或尚未發布的資料不會改標為今日。"
-    )
-    why = (
-        "推論：長端殖利率會改變企業融資成本與股票估值折現率，VIX 反映投資人對短期波動的定價；美元與美元／臺幣則會影響"
-        "跨境資金、進口成本與外資部位。若殖利率、VIX 與美元同步上升，高估值股票與新興市場通常承受較大壓力；若股指上漲但"
-        "這三項指標沒有同步降溫，反彈仍可能只是區域或短期交易。接下來應具體觀察 NASDAQ 是否收復前一交易日波動、10 年期"
-        "殖利率是否突破近期區間，以及布蘭特與黃金是否出現同方向的大幅變動。"
-    )
+    if edition == "morning":
+        headline = [
+            f"隔夜 S&P 500 {direction(sp)}、NASDAQ {direction(nas)}，",
+            f"VIX 來到 {vix['value']}、美國 10 年期為 {y10['value']}，",
+            "亞洲開盤先看美元、油價與科技股承接力",
+        ]
+        summary = (
+            f"事實：最近完成的美國交易日，S&P 500 {direction(sp)} {pct(sp)}、NASDAQ {direction(nas)} {pct(nas)}，"
+            f"VIX {direction(vix)} {pct(vix)}，美國 10 年期殖利率為 {y10['value']}。美元廣義指數為 {dollar['value']}，"
+            f"布蘭特原油為 {brent['value']}。推論：晨間重點是隔夜美股風險如何傳到臺日股市，而不是重複解讀尚未開盤的亞洲價格{carry_copy}。"
+        )
+        lead_title = "隔夜風險如何交棒亞洲：先看美股、利率與美元"
+        lead_tags = ["隔夜市場", "亞洲開盤"]
+        risk_copy = "晨間觀察 · 隔夜美股與利率訊號等待亞洲確認"
+        lead_copy = (
+            f"事實：最近完成交易日的 S&P 500 收在 {sp['value']}、單日{direction(sp)} {pct(sp)}；NASDAQ 收在 {nas['value']}、"
+            f"單日{direction(nas)} {pct(nas)}，VIX 為 {vix['value']}、變動 {vix['change']}。美國 10 年期殖利率為 {y10['value']}，"
+            f"美元廣義指數為 {dollar['value']}；布蘭特原油 {brent['value']}、黃金 {gold['value']}。亞洲前一可得交易日，"
+            f"臺灣加權為 {t['value']}、日經 225 為 {n['value']}，美元／臺幣為 {twd['value']}。晨報保留各來源真實日期，"
+            "尚未開盤或尚未發布的數字不會被改標成今日；重點是建立今天開盤前的風險基準。"
+        )
+        why = (
+            "推論：隔夜美股提供全球風險偏好的第一個方向，長端殖利率決定高估值公司的折現壓力，美元與油價則會透過外資換匯、"
+            "進口成本及企業毛利傳到亞洲。如果 NASDAQ 上漲但殖利率、美元與 VIX 同步走高，臺日科技股的追價力道仍可能有限；"
+            "若三項壓力同時下降，風險偏好才較有機會延續。開盤後應具體觀察臺股半導體權值、日圓與臺幣方向，以及前一小時成交量"
+            "是否高於近期平均，判斷隔夜訊號是否真的被亞洲市場接受。"
+        )
+    else:
+        headline = [
+            f"臺股{direction(t)}、日股{direction(n)}，亞洲收盤已有答案，",
+            f"歐洲三大指數變動 {eu['change']}／{dax['change']}／{ftse['change']}，",
+            "晚間留意美股能否接住跨區域風險偏好",
+        ]
+        summary = (
+            f"事實：臺灣加權收在 {t['value']}、{direction(t)} {pct(t)}；日經 225 為 {n['value']}、{direction(n)} {pct(n)}。"
+            f"歐洲時段 EURO STOXX 50、DAX、FTSE 100 分別變動 {eu['change']}、{dax['change']}、{ftse['change']}。"
+            f"推論：晚報重點是亞洲收盤結果能否獲得歐洲與稍後美股確認，而不是沿用晨間的隔夜敘事{carry_copy}。"
+        )
+        lead_title = "亞洲收盤後，風險偏好能否接力到歐洲與美國？"
+        lead_tags = ["亞洲收盤", "歐美接力"]
+        risk_copy = "晚間觀察 · 亞洲結果等待歐美時段確認"
+        lead_copy = (
+            f"事實：臺灣加權於 {t['asOf']} 收在 {t['value']}、單日{direction(t)} {pct(t)}；日經 225 於 {n['asOf']} 收在 {n['value']}、"
+            f"單日{direction(n)} {pct(n)}。歐洲時段的 EURO STOXX 50、DAX 與 FTSE 100 分別為 {eu['value']}、{dax['value']}、"
+            f"{ftse['value']}，變動 {eu['change']}、{dax['change']}、{ftse['change']}。美國最近完成交易日的 S&P 500 為 {sp['value']}、"
+            f"NASDAQ 為 {nas['value']}，10 年期殖利率 {y10['value']}，VIX {vix['value']}。美元／臺幣 {twd['value']}、"
+            f"布蘭特原油 {brent['value']}、黃金 {gold['value']}；所有數字均保留來源實際時間。"
+        )
+        why = (
+            "推論：亞洲收盤提供當日資金選擇的實際結果，歐洲盤中表現可用來判斷風險偏好是否跨區域延續；美股開盤後的科技股、"
+            "VIX 與長端殖利率則是最後確認。如果臺日股市走強、歐股也同步上漲，但美元與殖利率快速升高，全球行情仍可能只是短線輪動；"
+            "若歐股與美股同步承接且 VIX 下降，趨勢的可信度才會提高。今晚應觀察 S&P 500 與 NASDAQ 開盤一小時的方向、"
+            "美國 10 年期是否突破近期區間，以及黃金與原油是否反映新的通膨或避險需求。"
+        )
 
     important = [
         {
@@ -377,6 +406,40 @@ def build_edition(data: dict[str, Any], edition: str, now: datetime, carried: li
     ]
 
     if edition == "morning":
+        important = [important[2], important[3], important[4], important[0], important[1]]
+        important[0]["title"] = f"隔夜美股先定調：S&P 500 {sp['change']}、NASDAQ {nas['change']}"
+        important[0]["summary"] = (
+            f"事實：最近完成交易日 S&P 500 {direction(sp)} {pct(sp)}、NASDAQ {direction(nas)} {pct(nas)}，"
+            f"VIX 收在 {vix['value']}。推論：晨間先用美股廣度、科技股與波動率建立亞洲開盤基準；三者若方向不一致，"
+            "臺日股市即使高開也需要等待成交量確認。"
+        )
+        important[1]["title"] = f"開盤前資金成本：美國 10 年期 {y10['value']}、油價 {brent['value']}"
+        important[1]["summary"] = (
+            f"事實：美國 10 年期單日變動 {y10['change']}，布蘭特原油變動 {brent['change']}，黃金變動 {gold['change']}。"
+            "推論：殖利率影響估值，油價影響成本，黃金反映部分避險需求；三者是亞洲企業與投資人開盤前需要同時衡量的條件。"
+        )
+        important[2]["title"] = f"美元流動性晨間檢查：廣義美元 {dollar['value']}、美元／臺幣 {twd['value']}"
+        important[2]["summary"] = (
+            f"事實：美元廣義指數變動 {dollar['change']}，美元／臺幣變動 {twd['change']}，比特幣 24 小時變動 {btc['change']}。"
+            "推論：美元若走強且高波動資產轉弱，亞洲資金承接力通常較受限制；若美元轉弱，外資換匯壓力可能減輕。"
+        )
+        important[3]["title"] = f"亞洲開盤基準：臺股前值 {t['value']}、日經前值 {n['value']}"
+        important[4]["title"] = f"歐洲前一時段留下的訊號：{eu['change']}／{dax['change']}／{ftse['change']}"
+    else:
+        important[0]["title"] = f"亞洲收盤結果：臺灣加權 {t['change']}、日經 225 {n['change']}"
+        important[0]["summary"] = (
+            f"事實：臺灣加權於 {t['asOf']} 收在 {t['value']}，日經 225 於 {n['asOf']} 收在 {n['value']}。"
+            "推論：晚報以已完成的亞洲交易結果為起點，應再比對半導體、匯率與外資方向，判斷走勢是區域共振或單一市場輪動。"
+        )
+        important[1]["title"] = f"歐洲接力狀況：EURO STOXX 50 {eu['change']}、DAX {dax['change']}"
+        important[2]["title"] = f"美股今晚的比較基準：S&P 500 {sp['change']}、NASDAQ {nas['change']}"
+        important[3]["title"] = f"晚間風險價格：10 年期 {y10['value']}、油價 {brent['value']}、黃金 {gold['value']}"
+        important[4]["title"] = f"跨市場流動性：美元 {dollar['value']}、比特幣 {btc['change']}"
+
+    for index, item in enumerate(important, start=2):
+        item["number"] = f"{index:02d}"
+
+    if edition == "morning":
         radar = [
             radar_card("長端資金", "8.9", y10, f"美國 10 年期殖利率為 {y10['value']}，單日變動 {y10['change']}", "長端殖利率會透過企業融資、房貸與股票折現率傳導到多個市場；即使股指短線上漲，只要實質資金成本沒有下降，高估值產業仍可能面臨估值壓力。接下來應比較 2 年期與 10 年期利差、美元方向及成長股相對表現，確認壓力是政策預期還是期限溢酬造成。"),
             radar_card("匯率傳導", "8.6", twd, f"美元／臺幣最新為 {twd['value']}，變動 {twd['change']}", "匯率會改變進口能源與原料成本，也會影響外資換匯與出口企業的帳面收益；小幅變動若與美元廣義指數方向一致，可能逐步累積成資金流訊號。應持續比較美元廣義指數、外資買賣超與央行公開資料，而不是只看單日價格。"),
@@ -392,8 +455,8 @@ def build_edition(data: dict[str, Any], edition: str, now: datetime, carried: li
     return {
         "label": label, "time": time_label, "publishedAt": now.isoformat(timespec="seconds"),
         "kicker": kicker, "readTime": "閱讀時間 8 分鐘", "headline": headline,
-        "summary": summary, "risk": 64, "riskCopy": "中性偏謹慎 · 股債匯與商品訊號分歧",
-        "leadTags": ["跨市場", "利率"], "leadTitle": "市場不是只有漲跌：利率、波動與匯率正在決定風險能否延續",
+        "summary": summary, "risk": 64, "riskCopy": risk_copy,
+        "leadTags": lead_tags, "leadTitle": lead_title,
         "leadCopy": lead_copy, "why": why,
         "links": [link(t), link(n), link(sp), link(y10)],
         "impacts": [
@@ -487,6 +550,13 @@ def validate(data: dict[str, Any], edition: str, today: date, new_day: bool = Fa
                     age = (today - as_date(row["eventDate"])).days
                     if age < 0 or age > 31: errors.append(f"{name} 雷達日期超過 31 日")
                 except Exception: errors.append(f"{name} 雷達日期格式錯誤")
+    morning = editions.get("morning", {})
+    evening = editions.get("evening", {})
+    if morning.get("publishedAt") and evening.get("publishedAt"):
+        if morning.get("headline") == evening.get("headline"):
+            errors.append("晨報與晚報標題不可完全相同")
+        if morning.get("leadTitle") == evening.get("leadTitle"):
+            errors.append("晨報與晚報首要焦點不可完全相同")
     if edition == "morning" and new_day and editions.get("evening", {}).get("publishedAt") is not None:
         errors.append("新一天晚報 publishedAt 必須為 null")
     items = data.get("marketSnapshot", {}).get("items", [])
@@ -517,12 +587,31 @@ def validate(data: dict[str, Any], edition: str, today: date, new_day: bool = Fa
     return errors
 
 
-def run(path: Path, edition: str, dry_run: bool) -> dict[str, Any]:
+def run(path: Path, edition: str, dry_run: bool, force: bool = False) -> dict[str, Any]:
     now = datetime.now(TZ)
     today = now.date()
+    if not force and edition == "morning" and (now.hour, now.minute) < (8, 30):
+        raise RuntimeError("尚未到臺北時間 08:30，晨報停止發布")
+    if not force and edition == "evening" and (now.hour, now.minute) < (18, 30):
+        raise RuntimeError("尚未到臺北時間 18:30，晚報停止發布")
     data = json.loads(path.read_text(encoding="utf-8"))
     if not {"schemaVersion", "generatedAt", "report", "marketSnapshot", "reportHistory"}.issubset(data):
         raise RuntimeError("現有 latest.json 結構不完整，停止更新")
+
+    existing = data.get("report", {}).get("editions", {}).get(edition, {})
+    if (
+        not force
+        and data.get("report", {}).get("date") == today.isoformat()
+        and str(existing.get("publishedAt") or "").startswith(today.isoformat())
+    ):
+        result = {
+            "edition": edition,
+            "publishedAt": existing["publishedAt"],
+            "skipped": True,
+            "reason": "今日版本已成功發布，略過重複排程",
+        }
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return result
 
     new_day = edition == "morning" and data["report"]["date"] != today.isoformat()
     if new_day:
@@ -575,9 +664,10 @@ def main() -> int:
     parser.add_argument("--edition", choices=("morning", "evening"), required=True)
     parser.add_argument("--path", type=Path, default=REPORT_PATH)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
     try:
-        run(args.path, args.edition, args.dry_run)
+        run(args.path, args.edition, args.dry_run, args.force)
         return 0
     except Exception as exc:
         print(f"FINBRIEF 更新失敗：{exc}", file=sys.stderr)
