@@ -14,12 +14,13 @@
 
 ## 免費自動更新
 
-`.github/workflows/update-finbrief.yml` 由 GitHub Actions 執行：
+`.github/workflows/finbrief-cloud-v2.yml` 由 GitHub Actions 執行：
 
-- 臺北時間每日 08:30 更新晨報。
-- 臺北時間每日 18:30 更新晚報。
-- 也可在 Actions 頁面手動選擇 `morning` 或 `evening` 測試。
+- 晨報於臺北時間每日 08:37 執行；08:52、09:07 為免費備援時段。
+- 晚報於臺北時間每日 18:37 執行；18:52、19:07 為免費備援時段。
+- 也可在 Actions 頁面選擇 `morning` 或 `evening`，並以 `diagnostic` 模式只驗證、不修改資料。
 - 工作流程只會提交 `latest.json`，不會重新部署網站。
+- 排程完全由 GitHub 雲端執行，不需要開啟 Mac 或 Codex。
 
 更新器位於 `scripts/update_finbrief.py`，只使用 Python 標準函式庫與免費公開來源：臺灣證交所、FRED、美國財政部、Cboe、TradingView 與 Coinbase。個別來源失敗時保留上一筆真實資料與原始日期，不會把舊值偽裝成今日。
 
