@@ -3,8 +3,11 @@ name: FINBRIEF 免費晨晚報更新
 on:
   schedule:
     # GitHub cron 使用 UTC；臺北全年為 UTC+8。
-    - cron: "30 0 * * *"   # 臺北 08:30 晨報
-    - cron: "30 10 * * *"  # 臺北 18:30 晚報
+    # 每個時段保留五次免費重試；第一次成功後，更新器會自動跳過重複發布。
+    - cron: "30,45 0 * * *"    # 臺北 08:30、08:45 晨報
+    - cron: "0,15,30 1 * * *"  # 臺北 09:00、09:15、09:30 晨報備援
+    - cron: "30,45 10 * * *"   # 臺北 18:30、18:45 晚報
+    - cron: "0,15,30 11 * * *" # 臺北 19:00、19:15、19:30 晚報備援
   workflow_dispatch:
     inputs:
       edition:
@@ -47,9 +50,11 @@ jobs:
         run: |
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             echo "value=${{ inputs.edition }}" >> "$GITHUB_OUTPUT"
-          elif [[ "${{ github.event.schedule }}" == "30 0 * * *" ]]; then
+          elif [[ "${{ github.event.schedule }}" == "30,45 0 * * *" ]] || \
+               [[ "${{ github.event.schedule }}" == "0,15,30 1 * * *" ]]; then
             echo "value=morning" >> "$GITHUB_OUTPUT"
-          elif [[ "${{ github.event.schedule }}" == "30 10 * * *" ]]; then
+          elif [[ "${{ github.event.schedule }}" == "30,45 10 * * *" ]] || \
+               [[ "${{ github.event.schedule }}" == "0,15,30 11 * * *" ]]; then
             echo "value=evening" >> "$GITHUB_OUTPUT"
           else
             echo "無法辨識排程時段" >&2
