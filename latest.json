@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T22:42:37+08:00",
+  "generatedAt": "2026-09-27T13:38:23+08:00",
   "report": {
     "schemaVersion": 1,
-    "date": "2026-09-26",
-    "updatedAt": "2026-09-26T22:42:37+08:00",
+    "date": "2026-09-27",
+    "updatedAt": "2026-09-27T13:38:23+08:00",
     "contentStatus": "已查證",
     "editions": {
       "morning": {
         "label": "晨報",
         "time": "08:30",
-        "publishedAt": "2026-09-26T13:22:14+08:00",
+        "publishedAt": "2026-09-27T13:38:23+08:00",
         "kicker": "Morning intelligence",
         "readTime": "閱讀時間 8 分鐘",
         "headline": [
@@ -113,7 +113,7 @@
             "category": "流動性",
             "region": "全球",
             "title": "美元流動性晨間檢查：廣義美元 119.51、美元／臺幣 31.695",
-            "summary": "事實：美元廣義指數變動 +0.14%，美元／臺幣變動 −0.34%，比特幣 24 小時變動 −0.27%。推論：美元若走強且高波動資產轉弱，亞洲資金承接力通常較受限制；若美元轉弱，外資換匯壓力可能減輕。",
+            "summary": "事實：美元廣義指數變動 +0.14%，美元／臺幣變動 −0.34%，比特幣 24 小時變動 +0.76%。推論：美元若走強且高波動資產轉弱，亞洲資金承接力通常較受限制；若美元轉弱，外資換匯壓力可能減輕。",
             "impact": "美元、臺幣、加密資產",
             "links": [
               {
@@ -216,7 +216,7 @@
       "evening": {
         "label": "晚報",
         "time": "18:30",
-        "publishedAt": "2026-09-26T22:42:37+08:00",
+        "publishedAt": null,
         "kicker": "Evening intelligence",
         "readTime": "閱讀時間 8 分鐘",
         "headline": [
@@ -421,17 +421,17 @@
       }
     },
     "dailyKnowledge": {
-      "number": "NO. 269",
-      "date": "2026.09.26",
-      "category": "藝術保存",
+      "number": "NO. 270",
+      "date": "2026.09.27",
+      "category": "海洋科學",
       "readTime": "60 秒讀懂",
-      "title": "博物館為什麼嚴格控制光線？",
-      "summary": "光會促使顏料、紙張與纖維發生不可逆的化學變化，因此博物館會依材質調整照度與展示時間。",
-      "takeaway": "降低光照不是讓展覽變暗而已，而是在可觀看與長期保存之間取得平衡。",
+      "title": "深海熱泉不依靠陽光也能形成生態系",
+      "summary": "深海熱泉周圍的微生物利用化學能合成有機物，成為管蟲、貝類與其他生物的能量基礎。",
+      "takeaway": "生命取得能量的方式不限於光合作用，這也影響科學家尋找外星生命的思考。",
       "links": [
         {
-          "label": "加拿大保存研究所｜光線與文物",
-          "url": "https://www.canada.ca/en/conservation-institute/services/agents-deterioration/light.html"
+          "label": "NOAA｜深海熱泉",
+          "url": "https://oceanexplorer.noaa.gov/facts/vents.html"
         }
       ]
     },
@@ -449,7 +449,7 @@
         "level": "高"
       },
       {
-        "time": "10.03",
+        "time": "10.04",
         "region": "全球",
         "event": "下一週主要官方資料發布行程",
         "level": "中"
@@ -457,8 +457,8 @@
     ]
   },
   "marketSnapshot": {
-    "generatedAt": "2026-09-26T22:42:37+08:00",
-    "edition": "晚報免費雲端資料快照",
+    "generatedAt": "2026-09-27T13:38:23+08:00",
+    "edition": "晨報免費雲端資料快照",
     "items": [
       {
         "key": "taiex",
@@ -593,10 +593,10 @@
       {
         "key": "bitcoin",
         "label": "比特幣",
-        "value": "$84,018.06",
-        "change": "+0.02%",
+        "value": "$84,553.93",
+        "change": "+0.76%",
         "tone": "up",
-        "asOf": "2026-09-26T22:42:37+08:00",
+        "asOf": "2026-09-27T13:38:23+08:00",
         "source": "Coinbase",
         "sourceUrl": "https://www.coinbase.com/price/bitcoin"
       }
@@ -607,7 +607,7 @@
     "entries": [
       {
         "date": "2026-09-26",
-        "archivedAt": "2026-09-26T22:42:37+08:00",
+        "archivedAt": "2026-09-27T13:38:23+08:00",
         "report": {
           "schemaVersion": 1,
           "date": "2026-09-26",
