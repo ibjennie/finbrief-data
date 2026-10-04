@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T22:52:58+08:00",
+  "generatedAt": "2026-10-04T14:14:56+08:00",
   "report": {
     "schemaVersion": 1,
-    "date": "2026-10-03",
-    "updatedAt": "2026-10-03T22:52:58+08:00",
+    "date": "2026-10-04",
+    "updatedAt": "2026-10-04T14:14:56+08:00",
     "contentStatus": "已查證",
     "editions": {
       "morning": {
         "label": "晨報",
         "time": "08:30",
-        "publishedAt": "2026-10-03T13:39:40+08:00",
+        "publishedAt": "2026-10-04T14:14:56+08:00",
         "kicker": "Morning intelligence",
         "readTime": "閱讀時間 8 分鐘",
         "headline": [
@@ -113,7 +113,7 @@
             "category": "流動性",
             "region": "全球",
             "title": "美元流動性晨間檢查：廣義美元 120.33、美元／臺幣 31.796",
-            "summary": "事實：美元廣義指數變動 −0.18%，美元／臺幣變動 −0.29%，比特幣 24 小時變動 −1.57%。推論：美元若走強且高波動資產轉弱，亞洲資金承接力通常較受限制；若美元轉弱，外資換匯壓力可能減輕。",
+            "summary": "事實：美元廣義指數變動 −0.18%，美元／臺幣變動 −0.29%，比特幣 24 小時變動 +0.38%。推論：美元若走強且高波動資產轉弱，亞洲資金承接力通常較受限制；若美元轉弱，外資換匯壓力可能減輕。",
             "impact": "美元、臺幣、加密資產",
             "links": [
               {
@@ -216,7 +216,7 @@
       "evening": {
         "label": "晚報",
         "time": "18:30",
-        "publishedAt": "2026-10-03T22:52:58+08:00",
+        "publishedAt": null,
         "kicker": "Evening intelligence",
         "readTime": "閱讀時間 8 分鐘",
         "headline": [
@@ -421,17 +421,17 @@
       }
     },
     "dailyKnowledge": {
-      "number": "NO. 276",
-      "date": "2026.10.03",
-      "category": "地球科學",
+      "number": "NO. 277",
+      "date": "2026.10.04",
+      "category": "藝術保存",
       "readTime": "60 秒讀懂",
-      "title": "冰芯如何保存過去的大氣？",
-      "summary": "冰層形成時會封存微小氣泡，研究者可分析其中的氣體與同位素，重建過去的溫度、火山活動與大氣組成。",
-      "takeaway": "冰芯像是按年代堆疊的環境檔案，但解讀仍需配合定年與其他地質證據。",
+      "title": "博物館為什麼嚴格控制光線？",
+      "summary": "光會促使顏料、紙張與纖維發生不可逆的化學變化，因此博物館會依材質調整照度與展示時間。",
+      "takeaway": "降低光照不是讓展覽變暗而已，而是在可觀看與長期保存之間取得平衡。",
       "links": [
         {
-          "label": "NOAA｜古氣候代理資料",
-          "url": "https://www.ncei.noaa.gov/products/paleoclimatology"
+          "label": "加拿大保存研究所｜光線與文物",
+          "url": "https://www.canada.ca/en/conservation-institute/services/agents-deterioration/light.html"
         }
       ]
     },
@@ -449,7 +449,7 @@
         "level": "高"
       },
       {
-        "time": "10.10",
+        "time": "10.11",
         "region": "全球",
         "event": "下一週主要官方資料發布行程",
         "level": "中"
@@ -457,8 +457,8 @@
     ]
   },
   "marketSnapshot": {
-    "generatedAt": "2026-10-03T22:52:58+08:00",
-    "edition": "晚報免費雲端資料快照",
+    "generatedAt": "2026-10-04T14:14:56+08:00",
+    "edition": "晨報免費雲端資料快照",
     "items": [
       {
         "key": "taiex",
@@ -593,10 +593,10 @@
       {
         "key": "bitcoin",
         "label": "比特幣",
-        "value": "$84,833.78",
-        "change": "−0.99%",
-        "tone": "down",
-        "asOf": "2026-10-03T22:52:58+08:00",
+        "value": "$84,896.43",
+        "change": "+0.38%",
+        "tone": "up",
+        "asOf": "2026-10-04T14:14:56+08:00",
         "source": "Coinbase",
         "sourceUrl": "https://www.coinbase.com/price/bitcoin"
       }
@@ -607,7 +607,7 @@
     "entries": [
       {
         "date": "2026-10-03",
-        "archivedAt": "2026-10-03T22:52:58+08:00",
+        "archivedAt": "2026-10-04T14:14:56+08:00",
         "report": {
           "schemaVersion": 1,
           "date": "2026-10-03",
