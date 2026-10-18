@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T21:53:53+08:00",
+  "generatedAt": "2026-10-18T13:02:19+08:00",
   "report": {
     "schemaVersion": 1,
-    "date": "2026-10-17",
-    "updatedAt": "2026-10-17T21:53:53+08:00",
+    "date": "2026-10-18",
+    "updatedAt": "2026-10-18T13:02:19+08:00",
     "contentStatus": "已查證",
     "editions": {
       "morning": {
         "label": "晨報",
         "time": "08:30",
-        "publishedAt": "2026-10-17T12:54:30+08:00",
+        "publishedAt": "2026-10-18T13:02:19+08:00",
         "kicker": "Morning intelligence",
         "readTime": "閱讀時間 8 分鐘",
         "headline": [
@@ -113,7 +113,7 @@
             "category": "流動性",
             "region": "全球",
             "title": "美元流動性晨間檢查：廣義美元 121.60、美元／臺幣 32.428",
-            "summary": "事實：美元廣義指數變動 +0.13%，美元／臺幣變動 +0.22%，比特幣 24 小時變動 −0.79%。推論：美元若走強且高波動資產轉弱，亞洲資金承接力通常較受限制；若美元轉弱，外資換匯壓力可能減輕。",
+            "summary": "事實：美元廣義指數變動 +0.13%，美元／臺幣變動 +0.22%，比特幣 24 小時變動 +0.28%。推論：美元若走強且高波動資產轉弱，亞洲資金承接力通常較受限制；若美元轉弱，外資換匯壓力可能減輕。",
             "impact": "美元、臺幣、加密資產",
             "links": [
               {
@@ -216,7 +216,7 @@
       "evening": {
         "label": "晚報",
         "time": "18:30",
-        "publishedAt": "2026-10-17T21:53:53+08:00",
+        "publishedAt": null,
         "kicker": "Evening intelligence",
         "readTime": "閱讀時間 8 分鐘",
         "headline": [
@@ -421,17 +421,17 @@
       }
     },
     "dailyKnowledge": {
-      "number": "NO. 290",
-      "date": "2026.10.17",
-      "category": "自然科學",
+      "number": "NO. 291",
+      "date": "2026.10.18",
+      "category": "語言文化",
       "readTime": "60 秒讀懂",
-      "title": "珊瑚白化不等於珊瑚立即死亡",
-      "summary": "海水過熱會使珊瑚排出共生藻而失去顏色；若壓力及時解除，部分珊瑚仍可能恢復，但長期或反覆熱浪會提高死亡風險。",
-      "takeaway": "白化是嚴重壓力訊號，持續時間與重複頻率決定生態系能否修復。",
+      "title": "世界記憶計畫保存的不只是書",
+      "summary": "聯合國教科文組織的世界記憶計畫涵蓋手稿、錄音、影像、檔案與其他紀錄，目標是降低重要文獻遺產因災害、衝突或老化而消失的風險。",
+      "takeaway": "文化記憶的保存同時依賴實體修復、數位化與可持續的公共存取。",
       "links": [
         {
-          "label": "NOAA｜珊瑚白化",
-          "url": "https://oceanservice.noaa.gov/facts/coral_bleach.html"
+          "label": "UNESCO｜世界記憶計畫",
+          "url": "https://www.unesco.org/en/memory-world"
         }
       ]
     },
@@ -449,7 +449,7 @@
         "level": "高"
       },
       {
-        "time": "10.24",
+        "time": "10.25",
         "region": "全球",
         "event": "下一週主要官方資料發布行程",
         "level": "中"
@@ -457,8 +457,8 @@
     ]
   },
   "marketSnapshot": {
-    "generatedAt": "2026-10-17T21:53:53+08:00",
-    "edition": "晚報免費雲端資料快照",
+    "generatedAt": "2026-10-18T13:02:19+08:00",
+    "edition": "晨報免費雲端資料快照",
     "items": [
       {
         "key": "taiex",
@@ -593,10 +593,10 @@
       {
         "key": "bitcoin",
         "label": "比特幣",
-        "value": "$81,417.99",
-        "change": "−0.60%",
-        "tone": "down",
-        "asOf": "2026-10-17T21:53:53+08:00",
+        "value": "$81,681.99",
+        "change": "+0.28%",
+        "tone": "up",
+        "asOf": "2026-10-18T13:02:19+08:00",
         "source": "Coinbase",
         "sourceUrl": "https://www.coinbase.com/price/bitcoin"
       }
@@ -607,7 +607,7 @@
     "entries": [
       {
         "date": "2026-10-17",
-        "archivedAt": "2026-10-17T21:53:53+08:00",
+        "archivedAt": "2026-10-18T13:02:19+08:00",
         "report": {
           "schemaVersion": 1,
           "date": "2026-10-17",
