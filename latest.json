@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T22:06:16+08:00",
+  "generatedAt": "2026-10-25T13:10:19+08:00",
   "report": {
     "schemaVersion": 1,
-    "date": "2026-10-24",
-    "updatedAt": "2026-10-24T22:06:16+08:00",
+    "date": "2026-10-25",
+    "updatedAt": "2026-10-25T13:10:19+08:00",
     "contentStatus": "已查證",
     "editions": {
       "morning": {
         "label": "晨報",
         "time": "08:30",
-        "publishedAt": "2026-10-24T12:56:46+08:00",
+        "publishedAt": "2026-10-25T13:10:19+08:00",
         "kicker": "Morning intelligence",
         "readTime": "閱讀時間 8 分鐘",
         "headline": [
@@ -113,7 +113,7 @@
             "category": "流動性",
             "region": "全球",
             "title": "美元流動性晨間檢查：廣義美元 121.40、美元／臺幣 32.570",
-            "summary": "事實：美元廣義指數變動 −0.14%，美元／臺幣變動 −0.08%，比特幣 24 小時變動 −0.81%。推論：美元若走強且高波動資產轉弱，亞洲資金承接力通常較受限制；若美元轉弱，外資換匯壓力可能減輕。",
+            "summary": "事實：美元廣義指數變動 −0.14%，美元／臺幣變動 −0.08%，比特幣 24 小時變動 +0.17%。推論：美元若走強且高波動資產轉弱，亞洲資金承接力通常較受限制；若美元轉弱，外資換匯壓力可能減輕。",
             "impact": "美元、臺幣、加密資產",
             "links": [
               {
@@ -216,7 +216,7 @@
       "evening": {
         "label": "晚報",
         "time": "18:30",
-        "publishedAt": "2026-10-24T22:06:16+08:00",
+        "publishedAt": null,
         "kicker": "Evening intelligence",
         "readTime": "閱讀時間 8 分鐘",
         "headline": [
@@ -421,17 +421,17 @@
       }
     },
     "dailyKnowledge": {
-      "number": "NO. 297",
-      "date": "2026.10.24",
-      "category": "文學歷史",
+      "number": "NO. 298",
+      "date": "2026.10.25",
+      "category": "自然科學",
       "readTime": "60 秒讀懂",
-      "title": "死海古卷為何改變古代文本研究？",
-      "summary": "死海古卷包含兩千多年前的宗教與社群文獻，讓研究者能比較不同時期的抄本、語言與文本流傳方式。",
-      "takeaway": "古代文本不是固定不變的單一路線；抄寫、保存與社群使用都會留下歷史痕跡。",
+      "title": "珊瑚白化不等於珊瑚立即死亡",
+      "summary": "海水過熱會使珊瑚排出共生藻而失去顏色；若壓力及時解除，部分珊瑚仍可能恢復，但長期或反覆熱浪會提高死亡風險。",
+      "takeaway": "白化是嚴重壓力訊號，持續時間與重複頻率決定生態系能否修復。",
       "links": [
         {
-          "label": "以色列博物館｜死海古卷",
-          "url": "https://www.imj.org.il/en/wings/shrine-book/dead-sea-scrolls"
+          "label": "NOAA｜珊瑚白化",
+          "url": "https://oceanservice.noaa.gov/facts/coral_bleach.html"
         }
       ]
     },
@@ -449,7 +449,7 @@
         "level": "高"
       },
       {
-        "time": "10.31",
+        "time": "11.01",
         "region": "全球",
         "event": "下一週主要官方資料發布行程",
         "level": "中"
@@ -457,8 +457,8 @@
     ]
   },
   "marketSnapshot": {
-    "generatedAt": "2026-10-24T22:06:16+08:00",
-    "edition": "晚報免費雲端資料快照",
+    "generatedAt": "2026-10-25T13:10:19+08:00",
+    "edition": "晨報免費雲端資料快照",
     "items": [
       {
         "key": "taiex",
@@ -593,10 +593,10 @@
       {
         "key": "bitcoin",
         "label": "比特幣",
-        "value": "$80,644.28",
-        "change": "−1.27%",
-        "tone": "down",
-        "asOf": "2026-10-24T22:06:16+08:00",
+        "value": "$80,792.13",
+        "change": "+0.17%",
+        "tone": "up",
+        "asOf": "2026-10-25T13:10:19+08:00",
         "source": "Coinbase",
         "sourceUrl": "https://www.coinbase.com/price/bitcoin"
       }
@@ -607,7 +607,7 @@
     "entries": [
       {
         "date": "2026-10-24",
-        "archivedAt": "2026-10-24T22:06:16+08:00",
+        "archivedAt": "2026-10-25T13:10:19+08:00",
         "report": {
           "schemaVersion": 1,
           "date": "2026-10-24",
