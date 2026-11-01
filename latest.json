@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T23:51:02+08:00",
+  "generatedAt": "2026-11-01T14:44:31+08:00",
   "report": {
     "schemaVersion": 1,
-    "date": "2026-10-31",
-    "updatedAt": "2026-10-31T23:51:02+08:00",
+    "date": "2026-11-01",
+    "updatedAt": "2026-11-01T14:44:31+08:00",
     "contentStatus": "已查證",
     "editions": {
       "morning": {
         "label": "晨報",
         "time": "08:30",
-        "publishedAt": "2026-10-31T14:11:41+08:00",
+        "publishedAt": "2026-11-01T14:44:31+08:00",
         "kicker": "Morning intelligence",
         "readTime": "閱讀時間 8 分鐘",
         "headline": [
@@ -113,7 +113,7 @@
             "category": "流動性",
             "region": "全球",
             "title": "美元流動性晨間檢查：廣義美元 121.32、美元／臺幣 32.605",
-            "summary": "事實：美元廣義指數變動 −0.03%，美元／臺幣變動 +0.31%，比特幣 24 小時變動 −1.75%。推論：美元若走強且高波動資產轉弱，亞洲資金承接力通常較受限制；若美元轉弱，外資換匯壓力可能減輕。",
+            "summary": "事實：美元廣義指數變動 −0.03%，美元／臺幣變動 +0.31%，比特幣 24 小時變動 +0.69%。推論：美元若走強且高波動資產轉弱，亞洲資金承接力通常較受限制；若美元轉弱，外資換匯壓力可能減輕。",
             "impact": "美元、臺幣、加密資產",
             "links": [
               {
@@ -216,7 +216,7 @@
       "evening": {
         "label": "晚報",
         "time": "18:30",
-        "publishedAt": "2026-10-31T23:51:02+08:00",
+        "publishedAt": null,
         "kicker": "Evening intelligence",
         "readTime": "閱讀時間 8 分鐘",
         "headline": [
@@ -421,17 +421,17 @@
       }
     },
     "dailyKnowledge": {
-      "number": "NO. 304",
-      "date": "2026.10.31",
-      "category": "太空科學",
+      "number": "NO. 305",
+      "date": "2026.11.01",
+      "category": "文學歷史",
       "readTime": "60 秒讀懂",
-      "title": "韋伯望遠鏡為什麼能觀測早期宇宙？",
-      "summary": "韋伯太空望遠鏡主要觀測紅外線，可捕捉因宇宙膨脹而被拉長波長的古老星光，也較能穿透塵埃觀察恆星形成區。",
-      "takeaway": "紅外線讓天文學家同時研究遙遠星系與被塵埃遮蔽的近鄰天體。",
+      "title": "死海古卷為何改變古代文本研究？",
+      "summary": "死海古卷包含兩千多年前的宗教與社群文獻，讓研究者能比較不同時期的抄本、語言與文本流傳方式。",
+      "takeaway": "古代文本不是固定不變的單一路線；抄寫、保存與社群使用都會留下歷史痕跡。",
       "links": [
         {
-          "label": "NASA｜韋伯太空望遠鏡",
-          "url": "https://science.nasa.gov/mission/webb/"
+          "label": "以色列博物館｜死海古卷",
+          "url": "https://www.imj.org.il/en/wings/shrine-book/dead-sea-scrolls"
         }
       ]
     },
@@ -443,7 +443,7 @@
         "level": "高"
       },
       {
-        "time": "11.07",
+        "time": "11.08",
         "region": "全球",
         "event": "下一週主要官方資料發布行程",
         "level": "中"
@@ -451,8 +451,8 @@
     ]
   },
   "marketSnapshot": {
-    "generatedAt": "2026-10-31T23:51:02+08:00",
-    "edition": "晚報免費雲端資料快照",
+    "generatedAt": "2026-11-01T14:44:31+08:00",
+    "edition": "晨報免費雲端資料快照",
     "items": [
       {
         "key": "taiex",
@@ -587,10 +587,10 @@
       {
         "key": "bitcoin",
         "label": "比特幣",
-        "value": "$77,420.11",
-        "change": "−0.05%",
-        "tone": "down",
-        "asOf": "2026-10-31T23:51:02+08:00",
+        "value": "$77,768.89",
+        "change": "+0.69%",
+        "tone": "up",
+        "asOf": "2026-11-01T14:44:31+08:00",
         "source": "Coinbase",
         "sourceUrl": "https://www.coinbase.com/price/bitcoin"
       }
@@ -601,7 +601,7 @@
     "entries": [
       {
         "date": "2026-10-31",
-        "archivedAt": "2026-10-31T23:51:02+08:00",
+        "archivedAt": "2026-11-01T14:44:31+08:00",
         "report": {
           "schemaVersion": 1,
           "date": "2026-10-31",
